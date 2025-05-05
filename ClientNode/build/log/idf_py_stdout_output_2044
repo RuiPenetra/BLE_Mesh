@@ -1,0 +1,1583 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 30 2025 04:51:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=296ach (169644) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=000396d4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=000396f8 vaddr=3ffbdb60 size=054f8h ( 21752) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003ebf8 vaddr=40080000 size=01420h (  5152) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=95e14h (613908) map[0m
+[0;32mI (377) esp_image: segment 5: paddr=000d5e3c vaddr=40081420 size=16888h ( 92296) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (443) app_init: Project name:     onoff_client[0m
+[0;32mI (448) app_init: App version:      1[0m
+[0;32mI (451) app_init: Compile time:     Apr 30 2025 04:51:41[0m
+[0;32mI (456) app_init: ELF file SHA256:  2a04eac31...[0m
+[0;32mI (461) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (464) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (468) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (472) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (476) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (482) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFCAE50 len 000151B0 (84 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 40097CA8 len 00008358 (32 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (539) coexist: coex firmware version: e727207[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (553) EXAMPLE: Inicializando...[0m
+[0;32mI (553) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (553) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[1;31mE (573) esp_timer: Task is already initialized[0m
+[0;32mI (573) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (593) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (603) BTDM_INIT: Bluetooth MAC: 14:33:5c:38:cf:e2[0m
+[0;32mI (603) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (943) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (1033) EXAMPLE: Registro de provisionamento completado, código: 0[0m
+[0;32mI (1033) EXAMPLE_NVS: Restore, key "onoff_client", length 6[0m
+[0;32mI (1033) EXAMPLE_NVS: Restore, data: 00 00 00 00 01 0e[0m
+[0;32mI (1033) EXAMPLE: Restaurado: net_idx 0x0000, app_idx 0x0000, onoff 1, tid 0x0e[0m
+[0;32mI (1053) EXAMPLE: Nó de provisionamento ativado, código: 0[0m
+[0;32mI (1053) EXAMPLE: Nó BLE Mesh inicializado[0m
+[0;32mI (1053) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[1;31mE (1063) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[1;31mE (14323) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (14353) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (14383) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (14413) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (14443) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (14473) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (14503) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (16233) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (35703) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (37003) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[0;32mI (56193) EXAMPLE: Link de provisionamento aberto, bearer: PB-GATT[0m
+[0;33mW (63803) BLE_MESH: No Health Server context provided[0m
+[0;33mW (65023) BLE_MESH: No Health Server context provided[0m
+[0;32mI (65043) EXAMPLE: Link de provisionamento fechado, bearer: PB-GATT[0m
+[0;32mI (65043) EXAMPLE: Provisionamento completado[0m
+[0;32mI (65043) EXAMPLE: net_idx: 0x0000, addr: 0x005d[0m
+[0;32mI (65053) EXAMPLE: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (65053) EXAMPLE: Provisionamento completado! NetIdx: 0x0000, Addr: 0x005d[0m
+[0;33mW (66143) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (75163) EXAMPLE: AppKey adicionada[0m
+[0;32mI (75163) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (84473) EXAMPLE: Modelo vinculado à AppKey[0m
+[0;32mI (84473) EXAMPLE: AppKey vinculada ao OnOff Client: AppIdx 0x0000[0m
+[0;32mI (84483) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (84483) EXAMPLE_NVS: Store, data: 00 00 00 00 01 18[0m
+[0;32mI (105553) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (105553) EXAMPLE_NVS: Store, data: 00 00 00 00 00 19[0m
+[0;32mI (105553) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (108423) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (108423) EXAMPLE_NVS: Store, data: 00 00 00 00 01 1a[0m
+[0;32mI (108423) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (108453) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (108463) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (108463) EXAMPLE_NVS: Store, data: 00 00 00 00 00 1b[0m
+[0;32mI (108463) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (108493) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (108513) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (108513) EXAMPLE_NVS: Store, data: 00 00 00 00 01 1c[0m
+[0;32mI (108513) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (108543) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (108553) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (108553) EXAMPLE_NVS: Store, data: 00 00 00 00 00 1d[0m
+[0;32mI (108553) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (108583) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (108613) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (108613) EXAMPLE_NVS: Store, data: 00 00 00 00 01 1e[0m
+[0;32mI (108613) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (114043) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (114043) EXAMPLE_NVS: Store, data: 00 00 00 00 00 1f[0m
+[0;32mI (114043) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (124553) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (124553) EXAMPLE_NVS: Store, data: 00 00 00 00 01 20[0m
+[0;32mI (124553) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (146513) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (146513) EXAMPLE_NVS: Store, data: 00 00 00 00 00 21[0m
+[0;32mI (146513) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (146733) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (146733) EXAMPLE_NVS: Store, data: 00 00 00 00 01 22[0m
+[0;32mI (146733) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (148513) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (148513) EXAMPLE_NVS: Store, data: 00 00 00 00 00 23[0m
+[0;32mI (148513) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (148543) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (148553) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (148553) EXAMPLE_NVS: Store, data: 00 00 00 00 01 24[0m
+[0;32mI (148553) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (150333) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (150333) EXAMPLE_NVS: Store, data: 00 00 00 00 00 25[0m
+[0;32mI (150333) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (150483) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (150503) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (150503) EXAMPLE_NVS: Store, data: 00 00 00 00 01 26[0m
+[0;32mI (150503) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (153393) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (153393) EXAMPLE_NVS: Store, data: 00 00 00 00 00 27[0m
+[0;32mI (153393) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1443793) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1443793) EXAMPLE_NVS: Store, data: 00 00 00 00 01 28[0m
+[0;32mI (1443793) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (1443903) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (1443923) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1443923) EXAMPLE_NVS: Store, data: 00 00 00 00 00 29[0m
+[0;32mI (1443923) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1445223) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1445223) EXAMPLE_NVS: Store, data: 00 00 00 00 01 2a[0m
+[0;32mI (1445223) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (1449043) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1449043) EXAMPLE_NVS: Store, data: 00 00 00 00 00 2b[0m
+[0;32mI (1449043) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1449623) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1449623) EXAMPLE_NVS: Store, data: 00 00 00 00 01 2c[0m
+[0;32mI (1449623) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (1462823) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (1511423) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1511423) EXAMPLE_NVS: Store, data: 00 00 00 00 00 2d[0m
+[0;32mI (1511423) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1524803) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1524803) EXAMPLE_NVS: Store, data: 00 00 00 00 01 2e[0m
+[0;32mI (1524803) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (1526553) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1526553) EXAMPLE_NVS: Store, data: 00 00 00 00 00 2f[0m
+[0;32mI (1526553) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1527773) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1527773) EXAMPLE_NVS: Store, data: 00 00 00 00 01 30[0m
+[0;32mI (1527773) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (1527963) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1527963) EXAMPLE_NVS: Store, data: 00 00 00 00 00 31[0m
+[0;32mI (1527963) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1528893) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1528893) EXAMPLE_NVS: Store, data: 00 00 00 00 01 32[0m
+[0;32mI (1528893) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (1530193) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1530193) EXAMPLE_NVS: Store, data: 00 00 00 00 00 33[0m
+[0;32mI (1530193) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1531463) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1531463) EXAMPLE_NVS: Store, data: 00 00 00 00 01 34[0m
+[0;32mI (1531463) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (1532153) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1532153) EXAMPLE_NVS: Store, data: 00 00 00 00 00 35[0m
+[0;32mI (1532153) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1602463) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1602463) EXAMPLE_NVS: Store, data: 00 00 00 00 01 36[0m
+[0;32mI (1602463) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (1602493) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (1602503) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1602503) EXAMPLE_NVS: Store, data: 00 00 00 00 00 37[0m
+[0;32mI (1602503) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1621503) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1621503) EXAMPLE_NVS: Store, data: 00 00 00 00 01 38[0m
+[0;32mI (1621503) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (1622543) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1622543) EXAMPLE_NVS: Store, data: 00 00 00 00 00 39[0m
+[0;32mI (1622543) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (1622693) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (1622713) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1622713) EXAMPLE_NVS: Store, data: 00 00 00 00 01 3a[0m
+[0;32mI (1622713) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (1726413) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1726413) EXAMPLE_NVS: Store, data: 00 00 00 00 00 3b[0m
+[0;32mI (1726413) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1767363) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1767363) EXAMPLE_NVS: Store, data: 00 00 00 00 01 3c[0m
+[0;32mI (1767363) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (1770693) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1770693) EXAMPLE_NVS: Store, data: 00 00 00 00 00 3d[0m
+[0;32mI (1770693) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (1770793) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (1770813) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1770813) EXAMPLE_NVS: Store, data: 00 00 00 00 01 3e[0m
+[0;32mI (1770813) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2014723) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2014723) EXAMPLE_NVS: Store, data: 00 00 00 00 00 3f[0m
+[0;32mI (2014723) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2133913) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2133913) EXAMPLE_NVS: Store, data: 00 00 00 00 01 40[0m
+[0;32mI (2133913) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2144433) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2144433) EXAMPLE_NVS: Store, data: 00 00 00 00 00 41[0m
+[0;32mI (2144433) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (2144463) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (2144473) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2144473) EXAMPLE_NVS: Store, data: 00 00 00 00 01 42[0m
+[0;32mI (2144473) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2372353) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2372353) EXAMPLE_NVS: Store, data: 00 00 00 00 00 43[0m
+[0;32mI (2372353) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2394963) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2394963) EXAMPLE_NVS: Store, data: 00 00 00 00 01 44[0m
+[0;32mI (2394963) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2417793) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2417793) EXAMPLE_NVS: Store, data: 00 00 00 00 00 45[0m
+[0;32mI (2417793) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2442323) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2442323) EXAMPLE_NVS: Store, data: 00 00 00 00 01 46[0m
+[0;32mI (2442323) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3121983) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3121983) EXAMPLE_NVS: Store, data: 00 00 00 00 00 47[0m
+[0;32mI (3121983) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3155893) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3155893) EXAMPLE_NVS: Store, data: 00 00 00 00 01 48[0m
+[0;32mI (3155893) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (3156033) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3156053) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3156053) EXAMPLE_NVS: Store, data: 00 00 00 00 00 49[0m
+[0;32mI (3156053) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3174843) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3174843) EXAMPLE_NVS: Store, data: 00 00 00 00 01 4a[0m
+[0;32mI (3174843) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (3174873) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3174883) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3174883) EXAMPLE_NVS: Store, data: 00 00 00 00 00 4b[0m
+[0;32mI (3174883) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3177453) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3177453) EXAMPLE_NVS: Store, data: 00 00 00 00 01 4c[0m
+[0;32mI (3177453) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3178353) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3178353) EXAMPLE_NVS: Store, data: 00 00 00 00 00 4d[0m
+[0;32mI (3178353) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3210803) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3210803) EXAMPLE_NVS: Store, data: 00 00 00 00 01 4e[0m
+[0;32mI (3210803) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (3210853) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3210863) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3210863) EXAMPLE_NVS: Store, data: 00 00 00 00 00 4f[0m
+[0;32mI (3210863) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (3210923) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3210933) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3210933) EXAMPLE_NVS: Store, data: 00 00 00 00 01 50[0m
+[0;32mI (3210933) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3221333) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3221333) EXAMPLE_NVS: Store, data: 00 00 00 00 00 51[0m
+[0;32mI (3221333) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3221543) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3221543) EXAMPLE_NVS: Store, data: 00 00 00 00 01 52[0m
+[0;32mI (3221543) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3288723) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3288723) EXAMPLE_NVS: Store, data: 00 00 00 00 00 53[0m
+[0;32mI (3288723) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (3288793) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3288803) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3288803) EXAMPLE_NVS: Store, data: 00 00 00 00 01 54[0m
+[0;32mI (3288803) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3290293) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3290293) EXAMPLE_NVS: Store, data: 00 00 00 00 00 55[0m
+[0;32mI (3290293) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3296583) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3296583) EXAMPLE_NVS: Store, data: 00 00 00 00 01 56[0m
+[0;32mI (3296583) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3385863) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3385863) EXAMPLE_NVS: Store, data: 00 00 00 00 00 57[0m
+[0;32mI (3385863) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (3385893) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3385903) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3385903) EXAMPLE_NVS: Store, data: 00 00 00 00 01 58[0m
+[0;32mI (3385903) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3387213) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3387213) EXAMPLE_NVS: Store, data: 00 00 00 00 00 59[0m
+[0;32mI (3387213) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3387553) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3387553) EXAMPLE_NVS: Store, data: 00 00 00 00 01 5a[0m
+[0;32mI (3387553) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3387843) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3387843) EXAMPLE_NVS: Store, data: 00 00 00 00 00 5b[0m
+[0;32mI (3387843) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3388003) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3388003) EXAMPLE_NVS: Store, data: 00 00 00 00 01 5c[0m
+[0;32mI (3388003) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3388343) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3388343) EXAMPLE_NVS: Store, data: 00 00 00 00 00 5d[0m
+[0;32mI (3388343) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3394293) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3394293) EXAMPLE_NVS: Store, data: 00 00 00 00 01 5e[0m
+[0;32mI (3394293) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3395043) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3395043) EXAMPLE_NVS: Store, data: 00 00 00 00 00 5f[0m
+[0;32mI (3395043) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3395593) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3395593) EXAMPLE_NVS: Store, data: 00 00 00 00 01 60[0m
+[0;32mI (3395593) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3395753) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3395753) EXAMPLE_NVS: Store, data: 00 00 00 00 00 61[0m
+[0;32mI (3395753) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3423303) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3423303) EXAMPLE_NVS: Store, data: 00 00 00 00 01 62[0m
+[0;32mI (3423303) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3423753) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3423753) EXAMPLE_NVS: Store, data: 00 00 00 00 00 63[0m
+[0;32mI (3423753) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3426083) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3426083) EXAMPLE_NVS: Store, data: 00 00 00 00 01 64[0m
+[0;32mI (3426083) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (3426113) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3426123) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3426123) EXAMPLE_NVS: Store, data: 00 00 00 00 00 65[0m
+[0;32mI (3426123) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3426893) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3426893) EXAMPLE_NVS: Store, data: 00 00 00 00 01 66[0m
+[0;32mI (3426893) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (3427003) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3427023) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3427023) EXAMPLE_NVS: Store, data: 00 00 00 00 00 67[0m
+[0;32mI (3427023) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3427383) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3427383) EXAMPLE_NVS: Store, data: 00 00 00 00 01 68[0m
+[0;32mI (3427383) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3428133) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3428133) EXAMPLE_NVS: Store, data: 00 00 00 00 00 69[0m
+[0;32mI (3428133) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3428733) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3428733) EXAMPLE_NVS: Store, data: 00 00 00 00 01 6a[0m
+[0;32mI (3428733) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3430053) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3430053) EXAMPLE_NVS: Store, data: 00 00 00 00 00 6b[0m
+[0;32mI (3430053) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3430673) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3430673) EXAMPLE_NVS: Store, data: 00 00 00 00 01 6c[0m
+[0;32mI (3430673) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3434263) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3434263) EXAMPLE_NVS: Store, data: 00 00 00 00 00 6d[0m
+[0;32mI (3434263) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3436203) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3436203) EXAMPLE_NVS: Store, data: 00 00 00 00 01 6e[0m
+[0;32mI (3436203) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3436833) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3436833) EXAMPLE_NVS: Store, data: 00 00 00 00 00 6f[0m
+[0;32mI (3436833) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3438133) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3438133) EXAMPLE_NVS: Store, data: 00 00 00 00 01 70[0m
+[0;32mI (3438133) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3580133) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3580133) EXAMPLE_NVS: Store, data: 00 00 00 00 00 71[0m
+[0;32mI (3580133) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3580643) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3580643) EXAMPLE_NVS: Store, data: 00 00 00 00 01 72[0m
+[0;32mI (3580643) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3581153) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3581153) EXAMPLE_NVS: Store, data: 00 00 00 00 00 73[0m
+[0;32mI (3581153) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3581963) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3581963) EXAMPLE_NVS: Store, data: 00 00 00 00 01 74[0m
+[0;32mI (3581963) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3612983) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3612983) EXAMPLE_NVS: Store, data: 00 00 00 00 00 75[0m
+[0;32mI (3612983) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3613723) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3613723) EXAMPLE_NVS: Store, data: 00 00 00 00 01 76[0m
+[0;32mI (3613723) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3614143) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3614143) EXAMPLE_NVS: Store, data: 00 00 00 00 00 77[0m
+[0;32mI (3614143) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3614703) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3614703) EXAMPLE_NVS: Store, data: 00 00 00 00 01 78[0m
+[0;32mI (3614703) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3816913) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3816913) EXAMPLE_NVS: Store, data: 00 00 00 00 00 79[0m
+[0;32mI (3816913) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (3853853) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (3918593) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3918593) EXAMPLE_NVS: Store, data: 00 00 00 00 01 7a[0m
+[0;32mI (3918593) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3920063) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3920063) EXAMPLE_NVS: Store, data: 00 00 00 00 00 7b[0m
+[0;32mI (3920063) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3922583) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3922583) EXAMPLE_NVS: Store, data: 00 00 00 00 01 7c[0m
+[0;32mI (3922583) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (4009443) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4009443) EXAMPLE_NVS: Store, data: 00 00 00 00 00 7d[0m
+[0;32mI (4009443) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (4014463) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4014463) EXAMPLE_NVS: Store, data: 00 00 00 00 01 7e[0m
+[0;32mI (4014463) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (4014593) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (4014613) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4014613) EXAMPLE_NVS: Store, data: 00 00 00 00 00 7f[0m
+[0;32mI (4014613) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (4026203) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4026203) EXAMPLE_NVS: Store, data: 00 00 00 00 01 80[0m
+[0;32mI (4026203) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (4032543) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4032543) EXAMPLE_NVS: Store, data: 00 00 00 00 00 81[0m
+[0;32mI (4032543) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (4448263) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4448263) EXAMPLE_NVS: Store, data: 00 00 00 00 01 82[0m
+[0;32mI (4448263) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (4452243) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4452243) EXAMPLE_NVS: Store, data: 00 00 00 00 00 83[0m
+[0;32mI (4452243) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (4454883) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4454883) EXAMPLE_NVS: Store, data: 00 00 00 00 01 84[0m
+[0;32mI (4454883) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (4457583) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4457583) EXAMPLE_NVS: Store, data: 00 00 00 00 00 85[0m
+[0;32mI (4457583) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (4458333) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4458333) EXAMPLE_NVS: Store, data: 00 00 00 00 01 86[0m
+[0;32mI (4458333) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (4837003) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4837003) EXAMPLE_NVS: Store, data: 00 00 00 00 00 87[0m
+[0;32mI (4837003) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5342243) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5342243) EXAMPLE_NVS: Store, data: 00 00 00 00 01 88[0m
+[0;32mI (5342243) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5402203) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5402203) EXAMPLE_NVS: Store, data: 00 00 00 00 01 8c[0m
+[0;32mI (5402203) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5404563) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5404563) EXAMPLE_NVS: Store, data: 00 00 00 00 00 8d[0m
+[0;32mI (5404563) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (5404593) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (5404603) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5404603) EXAMPLE_NVS: Store, data: 00 00 00 00 01 8e[0m
+[0;32mI (5404603) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5405303) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5405303) EXAMPLE_NVS: Store, data: 00 00 00 00 00 8f[0m
+[0;32mI (5405303) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5406003) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5406003) EXAMPLE_NVS: Store, data: 00 00 00 00 01 90[0m
+[0;32mI (5406003) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (5406033) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (5406043) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5406043) EXAMPLE_NVS: Store, data: 00 00 00 00 00 91[0m
+[0;32mI (5406043) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5406723) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5406723) EXAMPLE_NVS: Store, data: 00 00 00 00 01 92[0m
+[0;32mI (5406723) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (5406893) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (5406913) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5406913) EXAMPLE_NVS: Store, data: 00 00 00 00 00 93[0m
+[0;32mI (5406913) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5407623) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5407623) EXAMPLE_NVS: Store, data: 00 00 00 00 01 94[0m
+[0;32mI (5407623) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5408553) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5408553) EXAMPLE_NVS: Store, data: 00 00 00 00 00 95[0m
+[0;32mI (5408553) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5409633) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5409633) EXAMPLE_NVS: Store, data: 00 00 00 00 01 96[0m
+[0;32mI (5409633) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5411273) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5411273) EXAMPLE_NVS: Store, data: 00 00 00 00 00 97[0m
+[0;32mI (5411273) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (5411303) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (5411313) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5411313) EXAMPLE_NVS: Store, data: 00 00 00 00 01 98[0m
+[0;32mI (5411313) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5412403) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5412403) EXAMPLE_NVS: Store, data: 00 00 00 00 00 99[0m
+[0;32mI (5412403) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5413673) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5413673) EXAMPLE_NVS: Store, data: 00 00 00 00 01 9a[0m
+[0;32mI (5413673) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5414833) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5414833) EXAMPLE_NVS: Store, data: 00 00 00 00 00 9b[0m
+[0;32mI (5414833) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (5414903) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (5414943) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5414943) EXAMPLE_NVS: Store, data: 00 00 00 00 01 9c[0m
+[0;32mI (5414943) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (5414973) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (5414983) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5414983) EXAMPLE_NVS: Store, data: 00 00 00 00 00 9d[0m
+[0;32mI (5414983) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5416333) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5416333) EXAMPLE_NVS: Store, data: 00 00 00 00 01 9e[0m
+[0;32mI (5416333) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5417643) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5417643) EXAMPLE_NVS: Store, data: 00 00 00 00 00 9f[0m
+[0;32mI (5417643) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5418543) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5418543) EXAMPLE_NVS: Store, data: 00 00 00 00 01 a0[0m
+[0;32mI (5418543) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5418843) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5418843) EXAMPLE_NVS: Store, data: 00 00 00 00 00 a1[0m
+[0;32mI (5418843) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5419623) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5419623) EXAMPLE_NVS: Store, data: 00 00 00 00 01 a2[0m
+[0;32mI (5419623) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5419883) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5419883) EXAMPLE_NVS: Store, data: 00 00 00 00 00 a3[0m
+[0;32mI (5419883) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5421023) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5421023) EXAMPLE_NVS: Store, data: 00 00 00 00 01 a4[0m
+[0;32mI (5421023) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5422113) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5422113) EXAMPLE_NVS: Store, data: 00 00 00 00 00 a5[0m
+[0;32mI (5422113) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5423203) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5423203) EXAMPLE_NVS: Store, data: 00 00 00 00 01 a6[0m
+[0;32mI (5423203) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5423983) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5423983) EXAMPLE_NVS: Store, data: 00 00 00 00 00 a7[0m
+[0;32mI (5423983) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5424283) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5424283) EXAMPLE_NVS: Store, data: 00 00 00 00 01 a8[0m
+[0;32mI (5424283) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5425113) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5425113) EXAMPLE_NVS: Store, data: 00 00 00 00 00 a9[0m
+[0;32mI (5425113) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5425343) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5425343) EXAMPLE_NVS: Store, data: 00 00 00 00 01 aa[0m
+[0;32mI (5425343) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5426403) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5426403) EXAMPLE_NVS: Store, data: 00 00 00 00 00 ab[0m
+[0;32mI (5426403) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5427323) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5427323) EXAMPLE_NVS: Store, data: 00 00 00 00 01 ac[0m
+[0;32mI (5427323) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5428283) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5428283) EXAMPLE_NVS: Store, data: 00 00 00 00 00 ad[0m
+[0;32mI (5428283) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (5428383) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (5428403) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5428403) EXAMPLE_NVS: Store, data: 00 00 00 00 01 ae[0m
+[0;32mI (5428403) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5429463) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5429463) EXAMPLE_NVS: Store, data: 00 00 00 00 00 af[0m
+[0;32mI (5429463) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5432723) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5432723) EXAMPLE_NVS: Store, data: 00 00 00 00 01 b0[0m
+[0;32mI (5432723) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5433643) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5433643) EXAMPLE_NVS: Store, data: 00 00 00 00 00 b1[0m
+[0;32mI (5433643) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (5433683) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (5433693) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5433693) EXAMPLE_NVS: Store, data: 00 00 00 00 01 b2[0m
+[0;32mI (5433693) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5435873) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5435873) EXAMPLE_NVS: Store, data: 00 00 00 00 00 b3[0m
+[0;32mI (5435873) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5437143) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5437143) EXAMPLE_NVS: Store, data: 00 00 00 00 01 b4[0m
+[0;32mI (5437143) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5439143) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5439143) EXAMPLE_NVS: Store, data: 00 00 00 00 00 b5[0m
+[0;32mI (5439143) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5440283) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5440283) EXAMPLE_NVS: Store, data: 00 00 00 00 01 b6[0m
+[0;32mI (5440283) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5440513) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5440513) EXAMPLE_NVS: Store, data: 00 00 00 00 00 b7[0m
+[0;32mI (5440513) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5441783) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5441783) EXAMPLE_NVS: Store, data: 00 00 00 00 01 b8[0m
+[0;32mI (5441783) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5442013) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5442013) EXAMPLE_NVS: Store, data: 00 00 00 00 00 b9[0m
+[0;32mI (5442013) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5446563) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5446563) EXAMPLE_NVS: Store, data: 00 00 00 00 01 ba[0m
+[0;32mI (5446563) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5448823) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5448823) EXAMPLE_NVS: Store, data: 00 00 00 00 00 bb[0m
+[0;32mI (5448823) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5449033) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5449033) EXAMPLE_NVS: Store, data: 00 00 00 00 01 bc[0m
+[0;32mI (5449033) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5451423) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5451423) EXAMPLE_NVS: Store, data: 00 00 00 00 00 bd[0m
+[0;32mI (5451423) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5451613) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5451613) EXAMPLE_NVS: Store, data: 00 00 00 00 01 be[0m
+[0;32mI (5451613) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5455203) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5455203) EXAMPLE_NVS: Store, data: 00 00 00 00 00 bf[0m
+[0;32mI (5455203) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5456953) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5456953) EXAMPLE_NVS: Store, data: 00 00 00 00 01 c0[0m
+[0;32mI (5456953) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5458743) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5458743) EXAMPLE_NVS: Store, data: 00 00 00 00 00 c1[0m
+[0;32mI (5458743) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5460213) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5460213) EXAMPLE_NVS: Store, data: 00 00 00 00 01 c2[0m
+[0;32mI (5460213) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5461213) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5461213) EXAMPLE_NVS: Store, data: 00 00 00 00 00 c3[0m
+[0;32mI (5461213) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5462033) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5462033) EXAMPLE_NVS: Store, data: 00 00 00 00 01 c4[0m
+[0;32mI (5462033) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5462683) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5462683) EXAMPLE_NVS: Store, data: 00 00 00 00 00 c5[0m
+[0;32mI (5462683) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5463473) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5463473) EXAMPLE_NVS: Store, data: 00 00 00 00 01 c6[0m
+[0;32mI (5463473) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5466143) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5466143) EXAMPLE_NVS: Store, data: 00 00 00 00 00 c7[0m
+[0;32mI (5466143) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5466763) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5466763) EXAMPLE_NVS: Store, data: 00 00 00 00 01 c8[0m
+[0;32mI (5466763) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5467323) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5467323) EXAMPLE_NVS: Store, data: 00 00 00 00 00 c9[0m
+[0;32mI (5467323) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5467863) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5467863) EXAMPLE_NVS: Store, data: 00 00 00 00 01 ca[0m
+[0;32mI (5467863) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5468443) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5468443) EXAMPLE_NVS: Store, data: 00 00 00 00 00 cb[0m
+[0;32mI (5468443) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5469023) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5469023) EXAMPLE_NVS: Store, data: 00 00 00 00 01 cc[0m
+[0;32mI (5469023) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5469583) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5469583) EXAMPLE_NVS: Store, data: 00 00 00 00 00 cd[0m
+[0;32mI (5469583) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5469963) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5469963) EXAMPLE_NVS: Store, data: 00 00 00 00 01 ce[0m
+[0;32mI (5469963) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5470163) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5470163) EXAMPLE_NVS: Store, data: 00 00 00 00 00 cf[0m
+[0;32mI (5470163) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5470743) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5470743) EXAMPLE_NVS: Store, data: 00 00 00 00 01 d0[0m
+[0;32mI (5470743) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5471373) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5471373) EXAMPLE_NVS: Store, data: 00 00 00 00 00 d1[0m
+[0;32mI (5471373) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (5472133) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5472133) EXAMPLE_NVS: Store, data: 00 00 00 00 01 d2[0m
+[0;32mI (5472133) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5472803) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5472803) EXAMPLE_NVS: Store, data: 00 00 00 00 00 d3[0m
+[0;32mI (5472803) EXAMPLE: Comando enviado! Estado: OFF[0m
+D�X}����� At 40097CA8 len 00008358 (32 KiB): IRAM
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (539) coexist: coex firmware version: e727207[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (553) EXAMPLE: Inicializando...[0m
+[0;32mI (553) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (553) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[1;31mE (573) esp_timer: Task is already initialized[0m
+[0;32mI (573) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (593) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (603) BTDM_INIT: Bluetooth MAC: 14:33:5c:38:cf:e2[0m
+[0;32mI (603) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (953) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (1043) EXAMPLE: Registro de provisionamento completado, código: 0[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, key "onoff_client", length 6[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, data: 00 00 00 00 00 d3[0m
+[0;32mI (1043) EXAMPLE: Restaurado: net_idx 0x0000, app_idx 0x0000, onoff 0, tid 0xd3[0m
+[0;32mI (1063) EXAMPLE: Nó de provisionamento ativado, código: 0[0m
+[0;32mI (1063) EXAMPLE: Nó BLE Mesh inicializado[0m
+[0;32mI (1063) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[1;31mE (1073) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (4023) EXAMPLE: Link de provisionamento aberto, bearer: PB-GATT[0m
+[0;33mW (23473) BLE_MESH: No Health Server context provided[0m
+[0;33mW (25823) BLE_MESH: No Health Server context provided[0m
+[0;32mI (25843) EXAMPLE: Link de provisionamento fechado, bearer: PB-GATT[0m
+[0;32mI (25853) EXAMPLE: Provisionamento completado[0m
+[0;32mI (25853) EXAMPLE: net_idx: 0x0000, addr: 0x0060[0m
+[0;32mI (25853) EXAMPLE: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (25853) EXAMPLE: Provisionamento completado! NetIdx: 0x0000, Addr: 0x0060[0m
+[0;33mW (26943) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (36003) EXAMPLE: AppKey adicionada[0m
+[0;32mI (36003) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (57873) EXAMPLE: Modelo vinculado à AppKey[0m
+[0;32mI (57873) EXAMPLE: AppKey vinculada ao OnOff Client: AppIdx 0x0000[0m
+[0;32mI (57873) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (57873) EXAMPLE_NVS: Store, data: 00 00 00 00 00 d3[0m
+[0;32mI (134933) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (134933) EXAMPLE_NVS: Store, data: 00 00 00 00 01 d4[0m
+[0;32mI (134933) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (142863) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (142863) EXAMPLE_NVS: Store, data: 00 00 00 00 00 d5[0m
+[0;32mI (142863) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (142893) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (142903) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (142903) EXAMPLE_NVS: Store, data: 00 00 00 00 01 d6[0m
+[0;32mI (142903) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (148483) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (148483) EXAMPLE_NVS: Store, data: 00 00 00 00 00 d7[0m
+[0;32mI (148483) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (155143) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (155143) EXAMPLE_NVS: Store, data: 00 00 00 00 01 d8[0m
+[0;32mI (155143) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (157093) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (157093) EXAMPLE_NVS: Store, data: 00 00 00 00 00 d9[0m
+[0;32mI (157093) EXAMPLE: Comando enviado! Estado: OFF[0m
++�� Project name:     onoff_client
+[0;32mI (448) app_init: App version:      1[0m
+[0;32mI (451) app_init: Compile time:     Apr 30 2025 04:51:41[0m
+[0;32mI (456) app_init: ELF file SHA256:  2a04eac31...[0m
+[0;32mI (461) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (464) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (468) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (472) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (476) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (482) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFCAE50 len 000151B0 (84 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 40097CA8 len 00008358 (32 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (539) coexist: coex firmware version: e727207[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (553) EXAMPLE: Inicializando...[0m
+[0;32mI (553) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (553) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[1;31mE (573) esp_timer: Task is already initialized[0m
+[0;32mI (573) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (593) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (603) BTDM_INIT: Bluetooth MAC: 14:33:5c:38:cf:e2[0m
+[0;32mI (603) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (953) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (1043) EXAMPLE: Registro de provisionamento completado, código: 0[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, key "onoff_client", length 6[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, data: 00 00 00 00 00 d9[0m
+[0;32mI (1043) EXAMPLE: Restaurado: net_idx 0x0000, app_idx 0x0000, onoff 0, tid 0xd9[0m
+[0;32mI (1063) EXAMPLE: Nó de provisionamento ativado, código: 0[0m
+[0;32mI (1063) EXAMPLE: Nó BLE Mesh inicializado[0m
+[0;32mI (1063) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[1;31mE (1073) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (18943) EXAMPLE: Link de provisionamento aberto, bearer: PB-GATT[0m
+[0;33mW (27543) BLE_MESH: No Health Server context provided[0m
+[0;33mW (28533) BLE_MESH: No Health Server context provided[0m
+[0;32mI (28553) EXAMPLE: Link de provisionamento fechado, bearer: PB-GATT[0m
+[0;32mI (28553) EXAMPLE: Provisionamento completado[0m
+[0;32mI (28553) EXAMPLE: net_idx: 0x0000, addr: 0x0062[0m
+[0;32mI (28553) EXAMPLE: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (28563) EXAMPLE: Provisionamento completado! NetIdx: 0x0000, Addr: 0x0062[0m
+[0;33mW (29653) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (38853) EXAMPLE: AppKey adicionada[0m
+[0;32mI (38853) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (66113) EXAMPLE: Modelo vinculado à AppKey[0m
+[0;32mI (66123) EXAMPLE: AppKey vinculada ao OnOff Client: AppIdx 0x0000[0m
+[0;32mI (66123) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (66123) EXAMPLE_NVS: Store, data: 00 00 00 00 00 d9[0m
+[1;31mE (69133) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (69283) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[0;32mI (89523) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (89523) EXAMPLE_NVS: Store, data: 00 00 00 00 01 dc[0m
+[0;32mI (89523) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (90993) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (90993) EXAMPLE_NVS: Store, data: 00 00 00 00 00 dd[0m
+[0;32mI (90993) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (91573) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (91573) EXAMPLE_NVS: Store, data: 00 00 00 00 01 de[0m
+[0;32mI (91573) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (91743) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (91763) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (91763) EXAMPLE_NVS: Store, data: 00 00 00 00 00 df[0m
+[0;32mI (91763) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (92133) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (92133) EXAMPLE_NVS: Store, data: 00 00 00 00 01 e0[0m
+[0;32mI (92133) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (92343) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (92343) EXAMPLE_NVS: Store, data: 00 00 00 00 00 e1[0m
+[0;32mI (92343) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (93363) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (93363) EXAMPLE_NVS: Store, data: 00 00 00 00 01 e2[0m
+[0;32mI (93363) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (126523) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (126523) EXAMPLE_NVS: Store, data: 00 00 00 00 00 e3[0m
+[0;32mI (126523) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (129773) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (129773) EXAMPLE_NVS: Store, data: 00 00 00 00 01 e4[0m
+[0;32mI (129773) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (130893) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (130893) EXAMPLE_NVS: Store, data: 00 00 00 00 00 e5[0m
+[0;32mI (130893) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (189333) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (189333) EXAMPLE_NVS: Store, data: 00 00 00 00 01 e6[0m
+[0;32mI (189333) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (190593) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (190593) EXAMPLE_NVS: Store, data: 00 00 00 00 00 e7[0m
+[0;32mI (190593) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (193793) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (193793) EXAMPLE_NVS: Store, data: 00 00 00 00 01 e8[0m
+[0;32mI (193793) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (194733) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (194733) EXAMPLE_NVS: Store, data: 00 00 00 00 00 e9[0m
+[0;32mI (194733) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (248443) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (370503) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (370503) EXAMPLE_NVS: Store, data: 00 00 00 00 01 ea[0m
+[0;32mI (370503) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (443) app_init: Project name:     onoff_client[0m
+[0;32mI (448) app_init: App version:      1[0m
+[0;32mI (451) app_init: Compile time:     Apr 30 2025 04:51:41[0m
+[0;32mI (456) app_init: ELF file SHA256:  2a04eac31...[0m
+[0;32mI (460) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (464) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (468) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (472) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (476) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (482) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFCAE50 len 000151B0 (84 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 40097CA8 len 00008358 (32 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (539) coexist: coex firmware version: e727207[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (553) EXAMPLE: Inicializando...[0m
+[0;32mI (553) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (553) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[1;31mE (573) esp_timer: Task is already initialized[0m
+[0;32mI (573) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (593) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (603) BTDM_INIT: Bluetooth MAC: 14:33:5c:38:cf:e2[0m
+[0;32mI (603) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (953) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (1033) EXAMPLE: Registro de provisionamento completado, código: 0[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, key "onoff_client", length 6[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, data: 00 00 00 00 01 ea[0m
+[0;32mI (1043) EXAMPLE: Restaurado: net_idx 0x0000, app_idx 0x0000, onoff 1, tid 0xea[0m
+[0;32mI (1063) EXAMPLE: Nó de provisionamento ativado, código: 0[0m
+[0;32mI (1063) EXAMPLE: Nó BLE Mesh inicializado[0m
+[0;32mI (1063) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[1;31mE (1073) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (11143) EXAMPLE: Link de provisionamento aberto, bearer: PB-GATT[0m
+[0;33mW (18343) BLE_MESH: No Health Server context provided[0m
+[0;33mW (19743) BLE_MESH: No Health Server context provided[0m
+[0;32mI (19763) EXAMPLE: Link de provisionamento fechado, bearer: PB-GATT[0m
+[0;32mI (19763) EXAMPLE: Provisionamento completado[0m
+[0;32mI (19763) EXAMPLE: net_idx: 0x0000, addr: 0x0067[0m
+[0;32mI (19773) EXAMPLE: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (19773) EXAMPLE: Provisionamento completado! NetIdx: 0x0000, Addr: 0x0067[0m
+[0;33mW (20863) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (29833) EXAMPLE: AppKey adicionada[0m
+[0;32mI (29833) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (55433) EXAMPLE: Modelo vinculado à AppKey[0m
+[0;32mI (55433) EXAMPLE: AppKey vinculada ao OnOff Client: AppIdx 0x0000[0m
+[0;32mI (55433) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (55433) EXAMPLE_NVS: Store, data: 00 00 00 00 01 ea[0m
+[1;31mE (88183) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (88313) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[0;32mI (106443) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (106443) EXAMPLE_NVS: Store, data: 00 00 00 00 00 ed[0m
+[0;32mI (106443) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (106643) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (106643) EXAMPLE_NVS: Store, data: 00 00 00 00 01 ee[0m
+[0;32mI (106643) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (109983) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (109983) EXAMPLE_NVS: Store, data: 00 00 00 00 00 ef[0m
+[0;32mI (109983) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (110843) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (110843) EXAMPLE_NVS: Store, data: 00 00 00 00 01 f0[0m
+[0;32mI (110843) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (111833) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (111833) EXAMPLE_NVS: Store, data: 00 00 00 00 00 f1[0m
+[0;32mI (111833) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (112023) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (112023) EXAMPLE_NVS: Store, data: 00 00 00 00 01 f2[0m
+[0;32mI (112023) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (112053) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (112063) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (112063) EXAMPLE_NVS: Store, data: 00 00 00 00 00 f3[0m
+[0;32mI (112063) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (113933) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (113933) EXAMPLE_NVS: Store, data: 00 00 00 00 01 f4[0m
+[0;32mI (113933) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (113963) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (113973) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (113973) EXAMPLE_NVS: Store, data: 00 00 00 00 00 f5[0m
+[0;32mI (113973) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (114003) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (114013) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (114013) EXAMPLE_NVS: Store, data: 00 00 00 00 01 f6[0m
+[0;32mI (114013) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (114043) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (114053) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (114053) EXAMPLE_NVS: Store, data: 00 00 00 00 00 f7[0m
+[0;32mI (114053) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (114083) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (114103) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (114103) EXAMPLE_NVS: Store, data: 00 00 00 00 01 f8[0m
+[0;32mI (114103) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (114133) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (114143) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (114143) EXAMPLE_NVS: Store, data: 00 00 00 00 00 f9[0m
+[0;32mI (114143) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (115083) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (115083) EXAMPLE_NVS: Store, data: 00 00 00 00 01 fa[0m
+[0;32mI (115083) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (115253) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (115273) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (115273) EXAMPLE_NVS: Store, data: 00 00 00 00 00 fb[0m
+[0;32mI (115273) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (540733) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (626103) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (626103) EXAMPLE_NVS: Store, data: 00 00 00 00 01 fc[0m
+[0;32mI (626103) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (628903) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (628903) EXAMPLE_NVS: Store, data: 00 00 00 00 00 fd[0m
+[0;32mI (628903) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (631453) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (631453) EXAMPLE_NVS: Store, data: 00 00 00 00 01 fe[0m
+[0;32mI (631453) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (635773) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (635773) EXAMPLE_NVS: Store, data: 00 00 00 00 00 ff[0m
+[0;32mI (635773) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (635973) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (635973) EXAMPLE_NVS: Store, data: 00 00 00 00 01 00[0m
+[0;32mI (635973) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (636773) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (636773) EXAMPLE_NVS: Store, data: 00 00 00 00 00 01[0m
+[0;32mI (636773) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (637423) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (637423) EXAMPLE_NVS: Store, data: 00 00 00 00 01 02[0m
+[0;32mI (637423) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (637643) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (637643) EXAMPLE_NVS: Store, data: 00 00 00 00 00 03[0m
+[0;32mI (637643) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (638573) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (638573) EXAMPLE_NVS: Store, data: 00 00 00 00 01 04[0m
+[0;32mI (638573) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (639333) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (639333) EXAMPLE_NVS: Store, data: 00 00 00 00 00 05[0m
+[0;32mI (639333) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (639543) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (639543) EXAMPLE_NVS: Store, data: 00 00 00 00 01 06[0m
+[0;32mI (639543) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (640583) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (640583) EXAMPLE_NVS: Store, data: 00 00 00 00 00 07[0m
+[0;32mI (640583) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (641543) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (641543) EXAMPLE_NVS: Store, data: 00 00 00 00 01 08[0m
+[0;32mI (641543) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (642443) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (642443) EXAMPLE_NVS: Store, data: 00 00 00 00 00 09[0m
+[0;32mI (642443) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (643633) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (643633) EXAMPLE_NVS: Store, data: 00 00 00 00 01 0a[0m
+[0;32mI (643633) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (644443) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (644443) EXAMPLE_NVS: Store, data: 00 00 00 00 00 0b[0m
+[0;32mI (644443) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (645293) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (645293) EXAMPLE_NVS: Store, data: 00 00 00 00 01 0c[0m
+[0;32mI (645293) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (646143) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (646143) EXAMPLE_NVS: Store, data: 00 00 00 00 00 0d[0m
+[0;32mI (646143) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (647133) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (647133) EXAMPLE_NVS: Store, data: 00 00 00 00 01 0e[0m
+[0;32mI (647133) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (647793) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (647793) EXAMPLE_NVS: Store, data: 00 00 00 00 00 0f[0m
+[0;32mI (647793) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (647933) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (647953) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (647953) EXAMPLE_NVS: Store, data: 00 00 00 00 01 10[0m
+[0;32mI (647953) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (648863) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (648863) EXAMPLE_NVS: Store, data: 00 00 00 00 00 11[0m
+[0;32mI (648863) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (649633) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (649633) EXAMPLE_NVS: Store, data: 00 00 00 00 01 12[0m
+[0;32mI (649633) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (650333) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (650333) EXAMPLE_NVS: Store, data: 00 00 00 00 00 13[0m
+[0;32mI (650333) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (681963) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (681963) EXAMPLE_NVS: Store, data: 00 00 00 00 01 14[0m
+[0;32mI (681963) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (682153) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (682153) EXAMPLE_NVS: Store, data: 00 00 00 00 00 15[0m
+[0;32mI (682153) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (683573) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (683573) EXAMPLE_NVS: Store, data: 00 00 00 00 01 16[0m
+[0;32mI (683573) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (683743) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (683763) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (683763) EXAMPLE_NVS: Store, data: 00 00 00 00 00 17[0m
+[0;32mI (683763) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (734993) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (734993) EXAMPLE_NVS: Store, data: 00 00 00 00 01 18[0m
+[0;32mI (734993) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (742283) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (742283) EXAMPLE_NVS: Store, data: 00 00 00 00 00 19[0m
+[0;32mI (742283) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (743523) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (743523) EXAMPLE_NVS: Store, data: 00 00 00 00 01 1a[0m
+[0;32mI (743523) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (744643) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (744643) EXAMPLE_NVS: Store, data: 00 00 00 00 00 1b[0m
+[0;32mI (744643) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (745673) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (745673) EXAMPLE_NVS: Store, data: 00 00 00 00 01 1c[0m
+[0;32mI (745673) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (829193) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (829193) EXAMPLE_NVS: Store, data: 00 00 00 00 00 1d[0m
+[0;32mI (829193) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (830473) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (830473) EXAMPLE_NVS: Store, data: 00 00 00 00 01 1e[0m
+[0;32mI (830473) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (831723) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (831723) EXAMPLE_NVS: Store, data: 00 00 00 00 00 1f[0m
+[0;32mI (831723) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (832553) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (832553) EXAMPLE_NVS: Store, data: 00 00 00 00 01 20[0m
+[0;32mI (832553) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (838833) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (838833) EXAMPLE_NVS: Store, data: 00 00 00 00 00 21[0m
+[0;32mI (838833) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (859623) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (859623) EXAMPLE_NVS: Store, data: 00 00 00 00 01 22[0m
+[0;32mI (859623) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (860623) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (860623) EXAMPLE_NVS: Store, data: 00 00 00 00 00 23[0m
+[0;32mI (860623) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (861493) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (861493) EXAMPLE_NVS: Store, data: 00 00 00 00 01 24[0m
+[0;32mI (861493) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (861743) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (861743) EXAMPLE_NVS: Store, data: 00 00 00 00 00 25[0m
+[0;32mI (861743) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (870283) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (870283) EXAMPLE_NVS: Store, data: 00 00 00 00 01 26[0m
+[0;32mI (870283) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (871783) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (871783) EXAMPLE_NVS: Store, data: 00 00 00 00 00 27[0m
+[0;32mI (871783) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (929263) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (929263) EXAMPLE_NVS: Store, data: 00 00 00 00 01 28[0m
+[0;32mI (929263) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (930883) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (930883) EXAMPLE_NVS: Store, data: 00 00 00 00 00 29[0m
+[0;32mI (930883) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (948023) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (948023) EXAMPLE_NVS: Store, data: 00 00 00 00 01 2a[0m
+[0;32mI (948023) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (969243) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (969243) EXAMPLE_NVS: Store, data: 00 00 00 00 00 2b[0m
+[0;32mI (969243) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (969403) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (969423) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (969423) EXAMPLE_NVS: Store, data: 00 00 00 00 01 2c[0m
+[0;32mI (969423) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (969543) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (969563) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (969563) EXAMPLE_NVS: Store, data: 00 00 00 00 00 2d[0m
+[0;32mI (969563) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (969593) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (969603) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (969603) EXAMPLE_NVS: Store, data: 00 00 00 00 01 2e[0m
+[0;32mI (969603) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (969713) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (969733) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (969733) EXAMPLE_NVS: Store, data: 00 00 00 00 00 2f[0m
+[0;32mI (969733) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (969763) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (969773) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (969773) EXAMPLE_NVS: Store, data: 00 00 00 00 01 30[0m
+[0;32mI (969773) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (969803) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (969823) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (969823) EXAMPLE_NVS: Store, data: 00 00 00 00 00 31[0m
+[0;32mI (969823) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (970193) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (970193) EXAMPLE_NVS: Store, data: 00 00 00 00 01 32[0m
+[0;32mI (970193) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (970713) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (970713) EXAMPLE_NVS: Store, data: 00 00 00 00 00 33[0m
+[0;32mI (970713) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (971223) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (971223) EXAMPLE_NVS: Store, data: 00 00 00 00 01 34[0m
+[0;32mI (971223) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (971973) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (971973) EXAMPLE_NVS: Store, data: 00 00 00 00 00 35[0m
+[0;32mI (971973) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (972413) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (972413) EXAMPLE_NVS: Store, data: 00 00 00 00 01 36[0m
+[0;32mI (972413) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (1065853) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1065853) EXAMPLE_NVS: Store, data: 00 00 00 00 00 37[0m
+[0;32mI (1065853) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1067273) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1067273) EXAMPLE_NVS: Store, data: 00 00 00 00 01 38[0m
+[0;32mI (1067273) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (1086783) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1086783) EXAMPLE_NVS: Store, data: 00 00 00 00 00 39[0m
+[0;32mI (1086783) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1160413) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1160413) EXAMPLE_NVS: Store, data: 00 00 00 00 01 3a[0m
+[0;32mI (1160413) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (1160623) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1160623) EXAMPLE_NVS: Store, data: 00 00 00 00 00 3b[0m
+[0;32mI (1160623) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1161673) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1161673) EXAMPLE_NVS: Store, data: 00 00 00 00 01 3c[0m
+[0;32mI (1161673) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (1182043) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1182043) EXAMPLE_NVS: Store, data: 00 00 00 00 00 3d[0m
+[0;32mI (1182043) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (1223253) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (1223253) EXAMPLE_NVS: Store, data: 00 00 00 00 01 3e[0m
+[0;32mI (1223253) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (1916363) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (2089093) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2089093) EXAMPLE_NVS: Store, data: 00 00 00 00 00 3f[0m
+[0;32mI (2089093) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (2089223) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (2089243) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2089243) EXAMPLE_NVS: Store, data: 00 00 00 00 01 40[0m
+[0;32mI (2089243) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2091793) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2091793) EXAMPLE_NVS: Store, data: 00 00 00 00 00 41[0m
+[0;32mI (2091793) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (2091923) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (2091943) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2091943) EXAMPLE_NVS: Store, data: 00 00 00 00 01 42[0m
+[0;32mI (2091943) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2099973) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2099973) EXAMPLE_NVS: Store, data: 00 00 00 00 00 43[0m
+[0;32mI (2099973) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2111513) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2111513) EXAMPLE_NVS: Store, data: 00 00 00 00 01 44[0m
+[0;32mI (2111513) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2115643) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2115643) EXAMPLE_NVS: Store, data: 00 00 00 00 00 45[0m
+[0;32mI (2115643) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2132603) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2132603) EXAMPLE_NVS: Store, data: 00 00 00 00 01 46[0m
+[0;32mI (2132603) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2133593) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2133593) EXAMPLE_NVS: Store, data: 00 00 00 00 00 47[0m
+[0;32mI (2133593) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2134083) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2134083) EXAMPLE_NVS: Store, data: 00 00 00 00 01 48[0m
+[0;32mI (2134083) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2156333) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2156333) EXAMPLE_NVS: Store, data: 00 00 00 00 00 49[0m
+[0;32mI (2156333) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2210603) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2210603) EXAMPLE_NVS: Store, data: 00 00 00 00 01 4a[0m
+[0;32mI (2210603) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2217863) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2217863) EXAMPLE_NVS: Store, data: 00 00 00 00 00 4b[0m
+[0;32mI (2217863) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2219223) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2219223) EXAMPLE_NVS: Store, data: 00 00 00 00 01 4c[0m
+[0;32mI (2219223) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2220923) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2220923) EXAMPLE_NVS: Store, data: 00 00 00 00 00 4d[0m
+[0;32mI (2220923) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2221853) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2221853) EXAMPLE_NVS: Store, data: 00 00 00 00 01 4e[0m
+[0;32mI (2221853) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2222873) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2222873) EXAMPLE_NVS: Store, data: 00 00 00 00 00 4f[0m
+[0;32mI (2222873) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2223673) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2223673) EXAMPLE_NVS: Store, data: 00 00 00 00 01 50[0m
+[0;32mI (2223673) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2235503) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2235503) EXAMPLE_NVS: Store, data: 00 00 00 00 00 51[0m
+[0;32mI (2235503) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2236163) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2236163) EXAMPLE_NVS: Store, data: 00 00 00 00 01 52[0m
+[0;32mI (2236163) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2272283) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2272283) EXAMPLE_NVS: Store, data: 00 00 00 00 00 53[0m
+[0;32mI (2272283) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2273023) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2273023) EXAMPLE_NVS: Store, data: 00 00 00 00 01 54[0m
+[0;32mI (2273023) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2726353) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2726353) EXAMPLE_NVS: Store, data: 00 00 00 00 00 55[0m
+[0;32mI (2726353) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2766743) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2766743) EXAMPLE_NVS: Store, data: 00 00 00 00 01 56[0m
+[0;32mI (2766743) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (2768203) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2768203) EXAMPLE_NVS: Store, data: 00 00 00 00 00 57[0m
+[0;32mI (2768203) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (2768853) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2768853) EXAMPLE_NVS: Store, data: 00 00 00 00 01 58[0m
+[0;32mI (2768853) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (2768883) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (2768893) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2768893) EXAMPLE_NVS: Store, data: 00 00 00 00 00 59[0m
+[0;32mI (2768893) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (2768923) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (2768943) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2768943) EXAMPLE_NVS: Store, data: 00 00 00 00 01 5a[0m
+[0;32mI (2768943) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (2769253) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (2769263) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2769263) EXAMPLE_NVS: Store, data: 00 00 00 00 00 5b[0m
+[0;32mI (2769263) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (2769293) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (2769313) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2769313) EXAMPLE_NVS: Store, data: 00 00 00 00 01 5c[0m
+[0;32mI (2769313) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (2769343) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (2769353) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2769353) EXAMPLE_NVS: Store, data: 00 00 00 00 00 5d[0m
+[0;32mI (2769353) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (2769413) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (2769423) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2769423) EXAMPLE_NVS: Store, data: 00 00 00 00 01 5e[0m
+[0;32mI (2769423) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (2769853) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (2769873) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (2769873) EXAMPLE_NVS: Store, data: 00 00 00 00 00 5f[0m
+[0;32mI (2769873) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3494023) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3494023) EXAMPLE_NVS: Store, data: 00 00 00 00 01 60[0m
+[0;32mI (3494023) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (3494153) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3494173) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3494173) EXAMPLE_NVS: Store, data: 00 00 00 00 00 61[0m
+[0;32mI (3494173) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3525453) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3525453) EXAMPLE_NVS: Store, data: 00 00 00 00 01 62[0m
+[0;32mI (3525453) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3580493) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3580493) EXAMPLE_NVS: Store, data: 00 00 00 00 00 63[0m
+[0;32mI (3580493) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (3580623) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3580643) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3580643) EXAMPLE_NVS: Store, data: 00 00 00 00 01 64[0m
+[0;32mI (3580643) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3637193) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3637193) EXAMPLE_NVS: Store, data: 00 00 00 00 00 65[0m
+[0;32mI (3637193) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3642233) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3642233) EXAMPLE_NVS: Store, data: 00 00 00 00 01 66[0m
+[0;32mI (3642233) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3653853) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3653853) EXAMPLE_NVS: Store, data: 00 00 00 00 00 67[0m
+[0;32mI (3653853) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3692963) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3692963) EXAMPLE_NVS: Store, data: 00 00 00 00 01 68[0m
+[0;32mI (3692963) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (3692993) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3693003) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3693003) EXAMPLE_NVS: Store, data: 00 00 00 00 00 69[0m
+[0;32mI (3693003) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3882483) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3882483) EXAMPLE_NVS: Store, data: 00 00 00 00 01 6a[0m
+[0;32mI (3882483) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3907633) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3907633) EXAMPLE_NVS: Store, data: 00 00 00 00 00 6b[0m
+[0;32mI (3907633) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3917743) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3917743) EXAMPLE_NVS: Store, data: 00 00 00 00 01 6c[0m
+[0;32mI (3917743) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (3917793) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3917803) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3917803) EXAMPLE_NVS: Store, data: 00 00 00 00 00 6d[0m
+[0;32mI (3917803) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (3917833) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3917843) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3917843) EXAMPLE_NVS: Store, data: 00 00 00 00 01 6e[0m
+[0;32mI (3917843) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (3917873) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3917883) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3917883) EXAMPLE_NVS: Store, data: 00 00 00 00 00 6f[0m
+[0;32mI (3917883) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (3917913) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3917923) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3917923) EXAMPLE_NVS: Store, data: 00 00 00 00 01 70[0m
+[0;32mI (3917923) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3952423) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3952423) EXAMPLE_NVS: Store, data: 00 00 00 00 00 71[0m
+[0;32mI (3952423) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3956703) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3956703) EXAMPLE_NVS: Store, data: 00 00 00 00 01 72[0m
+[0;32mI (3956703) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3960923) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3960923) EXAMPLE_NVS: Store, data: 00 00 00 00 00 73[0m
+[0;32mI (3960923) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (3961083) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (3961103) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3961103) EXAMPLE_NVS: Store, data: 00 00 00 00 01 74[0m
+[0;32mI (3961103) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (3986253) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3986253) EXAMPLE_NVS: Store, data: 00 00 00 00 00 75[0m
+[0;32mI (3986253) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (3993433) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (3993433) EXAMPLE_NVS: Store, data: 00 00 00 00 01 76[0m
+[0;32mI (3993433) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (4536703) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4536703) EXAMPLE_NVS: Store, data: 00 00 00 00 00 77[0m
+[0;32mI (4536703) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (4675173) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4675173) EXAMPLE_NVS: Store, data: 00 00 00 00 01 78[0m
+[0;32mI (4675173) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (4676503) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4676503) EXAMPLE_NVS: Store, data: 00 00 00 00 00 79[0m
+[0;32mI (4676503) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (4677553) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4677553) EXAMPLE_NVS: Store, data: 00 00 00 00 01 7a[0m
+[0;32mI (4677553) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (4677583) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (4677593) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4677593) EXAMPLE_NVS: Store, data: 00 00 00 00 00 7b[0m
+[0;32mI (4677593) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (4677623) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (4677643) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4677643) EXAMPLE_NVS: Store, data: 00 00 00 00 01 7c[0m
+[0;32mI (4677643) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (4678563) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4678563) EXAMPLE_NVS: Store, data: 00 00 00 00 00 7d[0m
+[0;32mI (4678563) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (4678593) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (4678603) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4678603) EXAMPLE_NVS: Store, data: 00 00 00 00 01 7e[0m
+[0;32mI (4678603) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (4678633) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (4678653) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4678653) EXAMPLE_NVS: Store, data: 00 00 00 00 00 7f[0m
+[0;32mI (4678653) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (4678683) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (4678693) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4678693) EXAMPLE_NVS: Store, data: 00 00 00 00 01 80[0m
+[0;32mI (4678693) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (4678723) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (4678743) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4678743) EXAMPLE_NVS: Store, data: 00 00 00 00 00 81[0m
+[0;32mI (4678743) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (4678773) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (4678783) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4678783) EXAMPLE_NVS: Store, data: 00 00 00 00 01 82[0m
+[0;32mI (4678783) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (4679513) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4679513) EXAMPLE_NVS: Store, data: 00 00 00 00 00 83[0m
+[0;32mI (4679513) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (4679543) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (4679553) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4679553) EXAMPLE_NVS: Store, data: 00 00 00 00 01 84[0m
+[0;32mI (4679553) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (4695253) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4695253) EXAMPLE_NVS: Store, data: 00 00 00 00 00 85[0m
+[0;32mI (4695253) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (4695443) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (4695453) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4695453) EXAMPLE_NVS: Store, data: 00 00 00 00 01 86[0m
+[0;32mI (4695453) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (4710133) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4710133) EXAMPLE_NVS: Store, data: 00 00 00 00 00 87[0m
+[0;32mI (4710133) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (4711163) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4711163) EXAMPLE_NVS: Store, data: 00 00 00 00 01 88[0m
+[0;32mI (4711163) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (4711483) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (4711503) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4711503) EXAMPLE_NVS: Store, data: 00 00 00 00 00 89[0m
+[0;32mI (4711503) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (4711633) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (4711653) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (4711653) EXAMPLE_NVS: Store, data: 00 00 00 00 01 8a[0m
+[0;32mI (4711653) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (5628873) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5628873) EXAMPLE_NVS: Store, data: 00 00 00 00 00 8b[0m
+[0;32mI (5628873) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (5629023) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (5629043) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (5629043) EXAMPLE_NVS: Store, data: 00 00 00 00 01 8c[0m
+[0;32mI (5629043) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (6422343) EXAMPLE: AppKey adicionada[0m
+[0;32mI (6422343) EXAMPLE: net_idx 0x0000, app_idx 0x0001[0m
+[0;32mI (6429943) EXAMPLE: Modelo vinculado à AppKey[0m
+[0;32mI (6429943) EXAMPLE: AppKey vinculada ao OnOff Client: AppIdx 0x0001[0m
+[0;32mI (6429953) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6429953) EXAMPLE_NVS: Store, data: 00 00 01 00 01 8c[0m
+[1;31mE (6451683) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6451713) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6451743) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6451773) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6451803) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6451863) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6453203) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6485073) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6485103) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6485133) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6485163) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6485193) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6485223) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6485253) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6485283) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[0;32mI (6517243) EXAMPLE: AppKey adicionada[0m
+[0;32mI (6517243) EXAMPLE: net_idx 0x0000, app_idx 0x0002[0m
+[0;32mI (6523443) EXAMPLE: Modelo vinculado à AppKey[0m
+[0;32mI (6523443) EXAMPLE: AppKey vinculada ao OnOff Client: AppIdx 0x0002[0m
+[0;32mI (6523453) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6523453) EXAMPLE_NVS: Store, data: 00 00 02 00 01 9b[0m
+[1;31mE (6527793) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6527823) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6527853) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6527883) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6527913) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6527943) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6527973) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6528003) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6528833) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6529493) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6539393) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6543553) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[0;32mI (6557063) EXAMPLE: AppKey adicionada[0m
+[0;32mI (6557063) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (6563183) EXAMPLE: Modelo vinculado à AppKey[0m
+[0;32mI (6563183) EXAMPLE: AppKey vinculada ao OnOff Client: AppIdx 0x0000[0m
+[0;32mI (6563193) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6563193) EXAMPLE_NVS: Store, data: 00 00 00 00 01 a7[0m
+[1;31mE (6578503) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6578533) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6578563) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6578593) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6579403) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6579443) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6579473) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6579503) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6579533) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6579563) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6636323) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6636993) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6637023) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[1;31mE (6637053) EXAMPLE: Falha ao enviar comando: 0x0102[0m
+[0;32mI (6719223) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6719223) EXAMPLE_NVS: Store, data: 00 00 00 00 00 b6[0m
+[0;32mI (6719223) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (6719253) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6719263) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6719263) EXAMPLE_NVS: Store, data: 00 00 00 00 01 b7[0m
+[0;32mI (6719263) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (6719293) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6719313) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6719313) EXAMPLE_NVS: Store, data: 00 00 00 00 00 b8[0m
+[0;32mI (6719313) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (6719343) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6719353) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6719353) EXAMPLE_NVS: Store, data: 00 00 00 00 01 b9[0m
+[0;32mI (6719353) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (6719383) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6719403) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6719403) EXAMPLE_NVS: Store, data: 00 00 00 00 00 ba[0m
+[0;32mI (6719403) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (6719433) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6719443) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6719443) EXAMPLE_NVS: Store, data: 00 00 00 00 01 bb[0m
+[0;32mI (6719443) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (6873943) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6873943) EXAMPLE_NVS: Store, data: 00 00 00 00 00 bc[0m
+[0;32mI (6873943) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (6873973) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6873983) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6873983) EXAMPLE_NVS: Store, data: 00 00 00 00 01 bd[0m
+[0;32mI (6873983) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (6874013) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6874033) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6874033) EXAMPLE_NVS: Store, data: 00 00 00 00 00 be[0m
+[0;32mI (6874033) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (6874063) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6874073) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6874073) EXAMPLE_NVS: Store, data: 00 00 00 00 01 bf[0m
+[0;32mI (6874073) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (6874103) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6874123) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6874123) EXAMPLE_NVS: Store, data: 00 00 00 00 00 c0[0m
+[0;32mI (6874123) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (6875463) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6875463) EXAMPLE_NVS: Store, data: 00 00 00 00 01 c1[0m
+[0;32mI (6875463) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (6875493) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6875513) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6875513) EXAMPLE_NVS: Store, data: 00 00 00 00 00 c2[0m
+[0;32mI (6875513) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (6875543) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6875553) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6875553) EXAMPLE_NVS: Store, data: 00 00 00 00 01 c3[0m
+[0;32mI (6875553) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (6875583) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6875593) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6875593) EXAMPLE_NVS: Store, data: 00 00 00 00 00 c4[0m
+[0;32mI (6875593) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (6875623) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6875643) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6875643) EXAMPLE_NVS: Store, data: 00 00 00 00 01 c5[0m
+[0;32mI (6875643) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (6876513) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6876513) EXAMPLE_NVS: Store, data: 00 00 00 00 00 c6[0m
+[0;32mI (6876513) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (6876573) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6876593) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6876593) EXAMPLE_NVS: Store, data: 00 00 00 00 01 c7[0m
+[0;32mI (6876593) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (6876643) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (6876653) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6876653) EXAMPLE_NVS: Store, data: 00 00 00 00 00 c8[0m
+[0;32mI (6876653) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (6994113) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (6994113) EXAMPLE_NVS: Store, data: 00 00 00 00 01 c9[0m
+[0;32mI (6994113) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (7122663) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (7122663) EXAMPLE_NVS: Store, data: 00 00 00 00 00 ca[0m
+[0;32mI (7122663) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;33mW (7122703) BLE_MESH: Clearing publish retransmit timer[0m
+[0;32mI (7122713) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (7122713) EXAMPLE_NVS: Store, data: 00 00 00 00 01 cb[0m
+[0;32mI (7122713) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;33mW (7122753) BLE_MESH: Clearin

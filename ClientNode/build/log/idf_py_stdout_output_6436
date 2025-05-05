@@ -1,0 +1,186 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 30 2025 04:51:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2967ch (169596) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=000396a4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=000396c8 vaddr=3ffbdb60 size=054f8h ( 21752) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003ebc8 vaddr=40080000 size=01450h (  5200) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=95db8h (613816) map[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d5de0 vaddr=40081450 size=16858h ( 92248) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (443) app_init: Project name:     onoff_client[0m
+[0;32mI (448) app_init: App version:      1[0m
+[0;32mI (451) app_init: Compile time:     Apr 30 2025 04:51:41[0m
+[0;32mI (456) app_init: ELF file SHA256:  94bf993ca...[0m
+[0;32mI (460) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (464) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (468) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (472) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (476) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (482) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFCAE48 len 000151B8 (84 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 40097CA8 len 00008358 (32 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (539) coexist: coex firmware version: e727207[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (553) EXAMPLE: Initializing...[0m
+[0;32mI (553) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (553) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[1;31mE (573) esp_timer: Task is already initialized[0m
+[0;32mI (573) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (603) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (603) BTDM_INIT: Bluetooth MAC: 14:33:5c:38:cf:e2[0m
+[0;32mI (603) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (953) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (1043) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, key "onoff_client", length 6[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, data: 00 00 01 00 00 06[0m
+[0;32mI (1053) EXAMPLE: Restore, net_idx 0x0000, app_idx 0x0001, onoff 0, tid 0x06[0m
+[0;32mI (1063) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1063) EXAMPLE: BLE Mesh Node initialized[0m
+[0;32mI (1073) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[1;31mE (1073) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[1;31mE (12713) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (12713) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (12713) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (12713) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (12733) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (12733) EXAMPLE_NVS: Store, data: 00 00 01 00 01 07[0m
+[1;31mE (12893) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (12893) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (12893) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (12893) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (12913) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (12913) EXAMPLE_NVS: Store, data: 00 00 01 00 00 08[0m
+B��tion at offset 0x10000
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (443) app_init: Project name:     onoff_client[0m
+[0;32mI (448) app_init: App version:      1[0m
+[0;32mI (451) app_init: Compile time:     Apr 30 2025 04:51:41[0m
+[0;32mI (456) app_init: ELF file SHA256:  94bf993ca...[0m
+[0;32mI (460) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (464) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (468) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (472) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (476) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (482) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFCAE48 len 000151B8 (84 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 40097CA8 len 00008358 (32 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (539) coexist: coex firmware version: e727207[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (553) EXAMPLE: Initializing...[0m
+[0;32mI (553) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (553) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[1;31mE (573) esp_timer: Task is already initialized[0m
+[0;32mI (573) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (603) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (603) BTDM_INIT: Bluetooth MAC: 14:33:5c:38:cf:e2[0m
+[0;32mI (603) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (953) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (1033) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, key "onoff_client", length 6[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, data: 00 00 01 00 00 08[0m
+[0;32mI (1043) EXAMPLE: Restore, net_idx 0x0000, app_idx 0x0001, onoff 0, tid 0x08[0m
+[0;32mI (1063) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1063) EXAMPLE: BLE Mesh Node initialized[0m
+[0;32mI (1063) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[1;31mE (1073) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[1;31mE (56533) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (56533) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (56533) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (56533) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (56553) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (56553) EXAMPLE_NVS: Store, data: 00 00 01 00 01 09[0m
+[1;31mE (56723) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (56723) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (56723) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (56723) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (56743) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (56743) EXAMPLE_NVS: Store, data: 00 00 01 00 00 0a[0m
+[1;31mE (65663) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (65663) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (65663) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (65663) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (65683) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (65683) EXAMPLE_NVS: Store, data: 00 00 01 00 01 0b[0m
+[1;31mE (216973) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (216973) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (216973) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (216973) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (216993) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (216993) EXAMPLE_NVS: Store, data: 00 00 01 00 00 0c[0m
+[1;31mE (217163) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (217163) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (217163) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (217163) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (217183) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (217183) EXAMPLE_NVS: Store, data: 00 00 01 00 01 0d[0m
+[1;31mE (456693) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (456693) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (456693) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (456693) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (456713) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (456713) EXAMPLE_NVS: Store, data: 00 00 01 00 00 0e[0m
+[1;31mE (456893) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (456893) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (456893) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (456893) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (456913) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (456913) EXAMPLE_NVS: Store, data: 00 00 01 00 01 0f[0m
+[1;31mE (706643) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (706643) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (706643) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (706643) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (706663) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (706663) EXAMPLE_NVS: Store, data: 00 00 01 00 00 10[0m

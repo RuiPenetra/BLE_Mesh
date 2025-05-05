@@ -1,0 +1,262 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.2 on \\.\COM4 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+[0m
+[0;33m--- 0x40081b75: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x4008fd0d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40095cd1: abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/abort.c:38
+--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+--- 0x40082d5d: _lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:162
+--- 0x40082dd6: __retarget_lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:321
+--- 0x401565db: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+--- 0x4014ead5: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x40164729: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:34
+--- 0x40095c41: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x40130844: ble_mesh_nvs_store at C:/Espressif/frameworks/esp-idf-v5.4.1/examples/bluetooth/esp_ble_mesh/common_components/example_nvs/ble_mesh_example_nvs.c:57 (discriminator 1)
+--- 0x400d98ee: mesh_example_info_store at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:103
+--- 0x400d9c07: example_ble_mesh_send_gen_onoff_set at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:201
+--- 0x400d9c0f: button_press_handler at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:297
+--- 0x40083cce: gpio_isr_loop at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:466
+--- 0x40083d5e: gpio_intr_service at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:488
+--- 0x40083a7d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/xtensa_vectors.S:1240
+--- 0x4008ea5b: xt_utils_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/cpu.c:55
+--- 0x400d4a0f: esp_vApplicationIdleHook at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/freertos_hooks.c:58
+--- 0x400914fd: prvIdleTask at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x40090709: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+[0m
+[0;33m--- 0x40081b75: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x4008fd0d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40095cd1: abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/abort.c:38
+--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+--- 0x40082d5d: _lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:162
+--- 0x40082dd6: __retarget_lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:321
+--- 0x401565db: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+--- 0x4014ead5: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x40164729: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:34
+--- 0x40095c41: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x40130844: ble_mesh_nvs_store at C:/Espressif/frameworks/esp-idf-v5.4.1/examples/bluetooth/esp_ble_mesh/common_components/example_nvs/ble_mesh_example_nvs.c:57 (discriminator 1)
+--- 0x400d98ee: mesh_example_info_store at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:103
+--- 0x400d9c07: example_ble_mesh_send_gen_onoff_set at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:201
+--- 0x400d9c0f: button_press_handler at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:297
+--- 0x40083cce: gpio_isr_loop at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:466
+--- 0x40083d5e: gpio_intr_service at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:488
+--- 0x40083a7d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/xtensa_vectors.S:1240
+--- 0x4008ea5b: xt_utils_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/cpu.c:55
+--- 0x400d4a0f: esp_vApplicationIdleHook at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/freertos_hooks.c:58
+--- 0x400914fd: prvIdleTask at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x40090709: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+[0m
+[0;33m--- 0x40081b75: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x4008fd0d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40095cd1: abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/abort.c:38
+[0m
+[0;33m--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+[0m
+[0;33m--- 0x40082dd6: __retarget_lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:321
+[0m
+[0;33m--- 0x401565db: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+[0m
+[0;33m--- 0x40164729: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:34
+[0m
+[0;33m--- 0x40095c41: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+[0m
+[0;33m--- 0x400d98ee: mesh_example_info_store at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:103
+[0m
+[0;33m--- 0x400d9c07: example_ble_mesh_send_gen_onoff_set at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:201
+[0m
+[0;33m--- 0x40083cce: gpio_isr_loop at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:466
+[0m
+[0;33m--- 0x40083d5e: gpio_intr_service at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:488
+[0m
+[0;33m--- 0x40083a7d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/xtensa_vectors.S:1240
+--- 0x4008ea5b: xt_utils_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/cpu.c:55
+[0m
+[0;33m--- 0x400d4a0f: esp_vApplicationIdleHook at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/freertos_hooks.c:58
+[0m
+[0;33m--- 0x400914fd: prvIdleTask at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+[0m
+[0;33m--- 0x40081b75: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x4008fd0d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40095cd1: abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/abort.c:38
+--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+--- 0x40082d5d: _lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:162
+--- 0x40082dd6: __retarget_lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:321
+--- 0x401565db: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+--- 0x4014ead5: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x40164729: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:34
+--- 0x40095c41: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d9bf1: example_ble_mesh_send_gen_onoff_set at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:196 (discriminator 1)
+--- 0x400d9c0f: button_press_handler at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:297
+--- 0x40083cce: gpio_isr_loop at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:466
+--- 0x40083d5e: gpio_intr_service at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:488
+--- 0x40083a7d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/xtensa_vectors.S:1240
+--- 0x40015c44: SubtractFromSelfBigHex256 in ROM
+--- 0x40015e4a: SubtractFromSelfBigHexSign256 in ROM
+--- 0x4001606a: specialModP256 in ROM
+--- 0x400161f7: MultiplyBigHexModP256 in ROM
+--- 0x40016286: GF_Jacobian_Point_Double256 in ROM
+--- 0x40016889: ecc_point_multiplication_uint8_256 in ROM
+--- 0x40016c1a: ecc_multiplication_event_handler in ROM
+--- 0x40019d11: r_ke_event_schedule in ROM
+--- 0x40055b4d: r_rwip_schedule in ROM
+--- 0x40140d3b: r_rw_schedule at ??:?
+--- 0x401413a1: btdm_controller_task at ??:?
+--- 0x40090709: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+[0m
+[0;33m--- 0x40081b75: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x4008fd0d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40095cd1: abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/abort.c:38
+--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+--- 0x40082d5d: _lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:162
+--- 0x40082dd6: __retarget_lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:321
+--- 0x401565db: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+--- 0x4014ead5: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x40164729: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:34
+--- 0x40095c41: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400d9bf1: example_ble_mesh_send_gen_onoff_set at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:196 (discriminator 1)
+--- 0x400d9c0f: button_press_handler at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:297
+--- 0x40083cce: gpio_isr_loop at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:466
+--- 0x40083d5e: gpio_intr_service at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:488
+--- 0x40083a7d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/xtensa_vectors.S:1240
+--- 0x40008544: ets_delay_us in ROM
+--- 0x4013cd5b: ram_get_fm_sar_dout at /home/lxf/gittree/chip7.1_phy/chip_7.1/board_code/app_test/pp/phy/phy_chip_v7_cal.c:285
+--- 0x40005fda: rom_get_power_db in ROM
+--- 0x4013e165: ram_meas_tone_pwr_db at /home/lxf/gittree/chip7.1_phy/chip_7.1/board_code/app_test/pp/phy/phy_chip_v7_cal.c:1342 (discriminator 3)
+--- 0x4013e46a: ram_tx_pwr_backoff at /home/lxf/gittree/chip7.1_phy/chip_7.1/board_code/app_test/pp/phy/phy_chip_v7_cal.c:1407
+--- 0x4013e6ed: tx_pwctrl_init_cal at /home/lxf/gittree/chip7.1_phy/chip_7.1/board_code/app_test/pp/phy/phy_chip_v7_cal.c:2144
+--- 0x4013e847: tx_pwctrl_init at /home/lxf/gittree/chip7.1_phy/chip_7.1/board_code/app_test/pp/phy/phy_chip_v7_cal.c:2211
+--- 0x4013b732: bb_init at /home/lxf/gittree/chip7.1_phy/chip_7.1/board_code/app_test/pp/phy/phy_chip_v7.c:2829
+--- 0x4013c5c7: register_chipv7_phy at /home/lxf/gittree/chip7.1_phy/chip_7.1/board_code/app_test/pp/phy/phy_chip_v7.c:4017
+--- 0x401378eb: esp_phy_load_cal_and_init at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_phy/src/phy_init.c:888
+--- 0x40137985: esp_phy_enable at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_phy/src/phy_init.c:300
+--- 0x400dac5e: esp_bt_controller_enable at C:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/controller/esp32/bt.c:1867
+--- 0x400da279: bluetooth_init at C:/Espressif/frameworks/esp-idf-v5.4.1/examples/bluetooth/esp_ble_mesh/common_components/example_init/ble_mesh_example_init.c:59
+--- 0x400d9d7b: app_main at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:326
+--- 0x4016400f: main_task at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x40090709: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+[0m
+[0;33m--- 0x40081b75: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x4008fd0d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40095cd1: abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/abort.c:38
+--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+--- 0x40082d5d: _lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:162
+--- 0x40082dd6: __retarget_lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:321
+--- 0x401565db: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+--- 0x4014ead5: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x40164729: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:34
+--- 0x40095c41: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x40130844: ble_mesh_nvs_store at C:/Espressif/frameworks/esp-idf-v5.4.1/examples/bluetooth/esp_ble_mesh/common_components/example_nvs/ble_mesh_example_nvs.c:57 (discriminator 1)
+--- 0x400d98ee: mesh_example_info_store at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:103
+--- 0x400d9c07: example_ble_mesh_send_gen_onoff_set at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:201
+--- 0x400d9c0f: button_press_handler at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:297
+--- 0x40083cce: gpio_isr_loop at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:466
+--- 0x40083d5e: gpio_intr_service at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:488
+--- 0x40083a7d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/xtensa_vectors.S:1240
+--- 0x4008ea5b: xt_utils_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/cpu.c:55
+--- 0x400d4a0f: esp_vApplicationIdleHook at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/freertos_hooks.c:58
+--- 0x400914fd: prvIdleTask at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x40090709: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+[0m
+[0;33m--- 0x40081b75: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x4008fd0d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40095cd1: abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/abort.c:38
+--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+--- 0x40082d5d: _lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:162
+--- 0x40082dd6: __retarget_lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:321
+--- 0x401565db: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+--- 0x4014ead5: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x40164729: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:34
+--- 0x40095c41: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x40130844: ble_mesh_nvs_store at C:/Espressif/frameworks/esp-idf-v5.4.1/examples/bluetooth/esp_ble_mesh/common_components/example_nvs/ble_mesh_example_nvs.c:57 (discriminator 1)
+--- 0x400d98ee: mesh_example_info_store at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:103
+--- 0x400d9c07: example_ble_mesh_send_gen_onoff_set at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:201
+--- 0x400d9c0f: button_press_handler at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:297
+--- 0x40083cce: gpio_isr_loop at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:466
+--- 0x40083d5e: gpio_intr_service at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:488
+--- 0x40083a7d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/xtensa_vectors.S:1240
+--- 0x4008ea5b: xt_utils_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/cpu.c:55
+--- 0x400d4a0f: esp_vApplicationIdleHook at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/freertos_hooks.c:58
+--- 0x400914fd: prvIdleTask at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x40090709: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+[0m
+[0;33m--- 0x40081b75: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x4008fd0d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40095cd1: abort at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/abort.c:38
+--- 0x40082c1f: lock_acquire_generic at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:133
+--- 0x40082d5d: _lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:162
+--- 0x40082dd6: __retarget_lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/locks.c:321
+--- 0x401565db: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+--- 0x4014ead5: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x40164729: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:34
+--- 0x40095c41: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x40130844: ble_mesh_nvs_store at C:/Espressif/frameworks/esp-idf-v5.4.1/examples/bluetooth/esp_ble_mesh/common_components/example_nvs/ble_mesh_example_nvs.c:57 (discriminator 1)
+--- 0x400d98ee: mesh_example_info_store at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:103
+--- 0x400d9c07: example_ble_mesh_send_gen_onoff_set at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:201
+--- 0x400d9c0f: button_press_handler at C:/Espressif/esp/meu_mesh/onoff_client/main/main.c:297
+--- 0x40083cce: gpio_isr_loop at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:466
+--- 0x40083d5e: gpio_intr_service at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/src/gpio.c:488
+--- 0x40083a7d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/xtensa_vectors.S:1240
+--- 0x4008ea5b: xt_utils_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/cpu.c:55
+--- 0x400d4a0f: esp_vApplicationIdleHook at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/freertos_hooks.c:58
+--- 0x400914fd: prvIdleTask at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x40090709: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m
+--- Toggle output display: False, Type Ctrl+T Ctrl+Y to show/disable output again.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m
+Traceback (most recent call last):
+  File "C:\Espressif\frameworks\esp-idf-v5.4.1\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

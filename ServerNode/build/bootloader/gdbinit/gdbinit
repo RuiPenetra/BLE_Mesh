@@ -1,0 +1,2 @@
+source C:/Espressif/esp/meu_mesh/onoff_server/build/bootloader/gdbinit/symbols
+source C:/Espressif/esp/meu_mesh/onoff_server/build/bootloader/gdbinit/connect

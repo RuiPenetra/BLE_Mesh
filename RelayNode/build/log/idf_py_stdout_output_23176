@@ -1,0 +1,310 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May  1 2025 17:20:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2d22ch (184876) map[0m
+[0;32mI (154) esp_image: segment 1: paddr=0003d254 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (154) esp_image: segment 2: paddr=0003d278 vaddr=3ffbdb60 size=02da0h ( 11680) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9b364h (635748) map[0m
+[0;32mI (382) esp_image: segment 4: paddr=000db38c vaddr=3ffc0900 size=028a8h ( 10408) load[0m
+[0;32mI (386) esp_image: segment 5: paddr=000ddc3c vaddr=40080000 size=17af8h ( 97016) load[0m
+[0;32mI (436) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (436) boot: Disabling RNG early entropy source...[0m
+[0;32mI (446) cpu_start: Multicore app[0m
+[0;32mI (455) cpu_start: Pro cpu start user code[0m
+[0;32mI (455) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (455) app_init: Application information:[0m
+[0;32mI (455) app_init: Project name:     onoff_server[0m
+[0;32mI (459) app_init: App version:      1[0m
+[0;32mI (463) app_init: Compile time:     May  1 2025 18:15:24[0m
+[0;32mI (468) app_init: ELF file SHA256:  dd94d0860...[0m
+[0;32mI (472) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (476) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (480) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (484) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (488) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (494) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (505) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (510) heap_init: At 3FFCAFC8 len 00015038 (84 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (520) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (526) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (533) spi_flash: detected chip: generic[0m
+[0;32mI (535) spi_flash: flash io: dio[0m
+[0;33mW (538) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (551) coexist: coex firmware version: e727207[0m
+[0;32mI (555) main_task: Started on CPU0[0m
+[0;32mI (565) main_task: Calling app_main()[0m
+[0;32mI (565) RELAY_NODE: Initializing...[0m
+[0;32mI (565) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (565) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (575) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (595) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (595) BTDM_INIT: Bluetooth MAC: 14:33:5c:37:3b:26[0m
+[0;32mI (605) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (955) BLE_MESH(lib): Bluetooth Mesh v1.1 commit: [meshlib:8a5446cb8d][0m
+[0;32mI (955) BLE_MESH: Friend not supported[0m
+[0;32mI (1035) RELAY_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1055) RELAY_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1055) RELAY_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1055) main_task: Returned from app_main()[0m
+[0;32mI (6815) RELAY_NODE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;33mW (14705) BLE_MESH: No Health Server context provided[0m
+[0;32mI (15915) BLE_MESH: Algorithm:   0x00[0m
+[0;32mI (15915) BLE_MESH: Public Key:  0x00[0m
+[0;32mI (15915) BLE_MESH: Auth Method: 0x00[0m
+[0;32mI (15915) BLE_MESH: Auth Action: 0x00[0m
+[0;32mI (15915) BLE_MESH: Auth Size:   0x00[0m
+[0;32mI (16275) BLE_MESH: Remote Random: 5dab8785b551b592df2571164ed816a7[0m
+[0;32mI (16365) BLE_MESH: Primary Element: 0x0068[0m
+[0;32mI (16375) BLE_MESH: net_idx 0x0000 flags 0x00 iv_index 0x0000[0m
+[0;32mI (16375) BLE_MESH: DevKey 3d3aae10bc2d756e1b8ccf9c70cfceec[0m
+[0;32mI (16375) BLE_MESH: NetKey fff982805f2bcb7d931b80237446d383[0m
+[0;33mW (16375) BLE_MESH: No Health Server context provided[0m
+[0;32mI (16385) BLE_MESH: Primary address 0x0068, element count 3[0m
+[0;32mI (16395) BLE_MESH: Scan is already started[0m
+[0;32mI (16415) RELAY_NODE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (16415) RELAY_NODE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (16415) RELAY_NODE: net_idx: 0x0000, addr: 0x0068[0m
+[0;32mI (16425) RELAY_NODE: flags: 0x00, iv_index: 0x00000000[0m
+[0;33mW (17495) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (22535) BLE_MESH: Add client or filter addr 0x0001[0m
+[0;32mI (22535) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (22535) BLE_MESH: recv, len 3: 800800[0m
+[0;32mI (22535) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (22545) BLE_MESH: send, len 32: 0200e502000000000a0003000000020000000010000001000010000001000010[0m
+[0;32mI (22555) BLE_MESH: Seg, send_tag 0x03, send_szmic 0, aszmic 0[0m
+[0;32mI (22555) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (22565) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (22565) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (22575) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (22575) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (22585) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (22715) BLE_MESH: Seg 0/2 acked[0m
+[0;32mI (22715) BLE_MESH: Seg 1/2 acked[0m
+[0;32mI (22715) BLE_MESH: Seg 2/2 acked[0m
+[0;32mI (22825) BLE_MESH: Attempts: 3[0m
+[0;32mI (23075) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (23205) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (23205) BLE_MESH: recv, len 2: 800c[0m
+[0;32mI (23205) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (23215) BLE_MESH: send, len 3: 800e07[0m
+[0;32mI (23215) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (23225) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (23225) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (24825) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (24825) BLE_MESH: recv, len 3: 80240a[0m
+[0;32mI (24825) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (24835) BLE_MESH: send, len 3: 80250a[0m
+[0;32mI (24835) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (24845) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (24845) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (26495) BLE_MESH: Seg 0/1 received[0m
+[0;32mI (26495) BLE_MESH: Seg 1/1 received[0m
+[0;32mI (26495) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (26495) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (26505) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (26505) BLE_MESH: recv, len 20: 0000000044b051ae8dfe4311f62caa804d3ec0cd[0m
+[0;32mI (26515) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (26515) BLE_MESH: send, len 6: 800300000000[0m
+[0;32mI (26525) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (26525) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (26535) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (26545) RELAY_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (26545) RELAY_NODE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (26545) AppKey: 44 b0 51 ae 8d fe 43 11 f6 2c aa 80 4d 3e c0 cd[0m
+[0;32mI (165405) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (165405) BLE_MESH: recv, len 5: 8000000000[0m
+[0;32mI (165405) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (165415) BLE_MESH: send, len 6: 800300000000[0m
+[0;32mI (165415) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (165425) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (165425) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (167295) BLE_MESH: Seg 0/1 received[0m
+[0;32mI (167335) BLE_MESH: Seg 1/1 received[0m
+[0;32mI (167345) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (167345) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (167345) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (167345) BLE_MESH: recv, len 20: 00002000c1da387488c37f037b3cc9df4d355457[0m
+[0;32mI (167355) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (167365) BLE_MESH: send, len 6: 800300002000[0m
+[0;32mI (167365) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (167375) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (167375) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (167385) RELAY_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (167385) RELAY_NODE: net_idx 0x0000, app_idx 0x0002[0m
+[0;32mI (167395) AppKey: c1 da 38 74 88 c3 7f 03 7b 3c c9 df 4d 35 54 57[0m
+[0;32mI (168465) BLE_MESH: Seg 0/1 received[0m
+[0;32mI (168465) BLE_MESH: Seg 1/1 received[0m
+[0;32mI (168465) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (168475) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (168475) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (168475) BLE_MESH: recv, len 20: 00003000f395f1348ec36e436ee8ab1506266131[0m
+[0;32mI (168485) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (168495) BLE_MESH: send, len 6: 800300003000[0m
+[0;32mI (168495) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (168505) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (168505) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (168515) RELAY_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (168515) RELAY_NODE: net_idx 0x0000, app_idx 0x0003[0m
+[0;32mI (168525) AppKey: f3 95 f1 34 8e c3 6e 43 6e e8 ab 15 06 26 61 31[0m
+[0;32mI (169415) BLE_MESH: Seg 0/1 received[0m
+[0;32mI (169455) BLE_MESH: Seg 1/1 received[0m
+[0;32mI (169455) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (169455) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (169455) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (169465) BLE_MESH: recv, len 20: 00004000265feb5e2d0cf427f0e24f42aa2f0a08[0m
+[0;32mI (169475) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (169475) BLE_MESH: send, len 6: 800300004000[0m
+[0;32mI (169475) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (169485) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (169495) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (169505) RELAY_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (169505) RELAY_NODE: net_idx 0x0000, app_idx 0x0004[0m
+[0;32mI (169505) AppKey: 26 5f eb 5e 2d 0c f4 27 f0 e2 4f 42 aa 2f 0a 08[0m
+[0;32mI (175035) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (175035) BLE_MESH: recv, len 8: 803d680002000010[0m
+[0;32mI (175035) BLE_MESH: bind app key 0x2 on mode 0x1000[0m
+[0;32mI (175035) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (175045) BLE_MESH: send, len 9: 803e00680002000010[0m
+[0;32mI (175045) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (175055) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (175065) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (175075) RELAY_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (175075) RELAY_NODE: elem_addr 0x0068, app_idx 0x0002, cid 0xffff, mod_id 0x1000[0m
+[0;32mI (180565) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (180575) BLE_MESH: recv, len 8: 803d690003000010[0m
+[0;32mI (180575) BLE_MESH: bind app key 0x3 on mode 0x1000[0m
+[0;32mI (180575) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (180575) BLE_MESH: send, len 9: 803e00690003000010[0m
+[0;32mI (180585) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (180595) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (180595) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (180615) RELAY_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (180615) RELAY_NODE: elem_addr 0x0069, app_idx 0x0003, cid 0xffff, mod_id 0x1000[0m
+[0;32mI (189885) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (189885) BLE_MESH: recv, len 8: 803d6a0004000010[0m
+[0;32mI (189885) BLE_MESH: bind app key 0x4 on mode 0x1000[0m
+[0;32mI (189895) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (189895) BLE_MESH: send, len 9: 803e006a0004000010[0m
+[0;32mI (189905) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (189905) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (189915) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (189925) RELAY_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (189925) RELAY_NODE: elem_addr 0x006a, app_idx 0x0004, cid 0xffff, mod_id 0x1000[0m
+[0;32mI (217745) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (312705) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (352465) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (409305) BLE_MESH: Seg 0/1 received[0m
+[0;32mI (409345) BLE_MESH: Seg 1/1 received[0m
+[0;32mI (409345) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (409345) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (409345) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (409355) BLE_MESH: recv, len 20: 0000000044b051ae8dfe4311f62caa804d3ec0cd[0m
+[0;32mI (409365) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (409365) BLE_MESH: send, len 6: 800305000000[0m
+[0;32mI (409375) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (409375) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (409385) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (411285) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (411285) BLE_MESH: recv, len 5: 8000002000[0m
+[0;32mI (411285) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (411285) BLE_MESH: send, len 6: 800300002000[0m
+[0;32mI (411295) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (411295) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (411305) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (412365) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (412365) BLE_MESH: recv, len 5: 8000003000[0m
+[0;32mI (412365) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (412365) BLE_MESH: send, len 6: 800300003000[0m
+[0;32mI (412365) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (412375) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (412385) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (413085) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (413085) BLE_MESH: recv, len 5: 8000004000[0m
+[0;32mI (413085) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (413085) BLE_MESH: send, len 6: 800300004000[0m
+[0;32mI (413095) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (413095) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (413105) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (413755) BLE_MESH: Seg 0/1 received[0m
+[0;32mI (413805) BLE_MESH: Seg 1/1 received[0m
+[0;32mI (413805) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (413805) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (413805) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (413805) BLE_MESH: recv, len 20: 0000000044b051ae8dfe4311f62caa804d3ec0cd[0m
+[0;32mI (413815) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (413825) BLE_MESH: send, len 6: 800300000000[0m
+[0;32mI (413825) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (413835) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (413835) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (413845) RELAY_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (413845) RELAY_NODE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (413855) AppKey: 44 b0 51 ae 8d fe 43 11 f6 2c aa 80 4d 3e c0 cd[0m
+[0;32mI (419025) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (419025) BLE_MESH: recv, len 8: 803d680000000010[0m
+[0;32mI (419025) BLE_MESH: bind app key 0 on mode 0x1000[0m
+[0;32mI (419025) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (419035) BLE_MESH: send, len 9: 803e00680000000010[0m
+[0;32mI (419035) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (419045) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (419045) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (419065) RELAY_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (419065) RELAY_NODE: elem_addr 0x0068, app_idx 0x0000, cid 0xffff, mod_id 0x1000[0m
+[0;32mI (423385) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (423385) BLE_MESH: recv, len 8: 803d690000000010[0m
+[0;32mI (423385) BLE_MESH: bind app key 0 on mode 0x1000[0m
+[0;32mI (423385) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (423395) BLE_MESH: send, len 9: 803e00690000000010[0m
+[0;32mI (423405) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (423405) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (423415) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (423425) RELAY_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (423425) RELAY_NODE: elem_addr 0x0069, app_idx 0x0000, cid 0xffff, mod_id 0x1000[0m
+[0;32mI (428515) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x0068[0m
+[0;32mI (428515) BLE_MESH: recv, len 8: 803d6a0000000010[0m
+[0;32mI (428515) BLE_MESH: bind app key 0 on mode 0x1000[0m
+[0;32mI (428515) BLE_MESH: send, app_idx 0xfffe src 0x0068 dst 0x0001[0m
+[0;32mI (428525) BLE_MESH: send, len 9: 803e006a0000000010[0m
+[0;32mI (428535) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (428535) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (428545) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (428555) RELAY_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (428555) RELAY_NODE: elem_addr 0x006a, app_idx 0x0000, cid 0xffff, mod_id 0x1000[0m
+[0;32mI (507825) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (508035) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (508345) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;33mW (564185) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (600845) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (665385) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (665685) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (666005) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (945) BLE_MESH(lib): Bluetooth Mesh v1.1 commit: [meshlib:8a5446cb8d][0m
+[0;32mI (945) BLE_MESH: Friend not supported[0m
+[0;32mI (1035) RELAY_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1045) RELAY_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1045) RELAY_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1045) main_task: Returned from app_main()[0m

@@ -1,0 +1,480 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 30 2025 04:51:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2976ch (169836) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=00039794 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=000397b8 vaddr=3ffbdb60 size=054f8h ( 21752) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003ecb8 vaddr=40080000 size=01360h (  4960) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=95e60h (613984) map[0m
+[0;32mI (377) esp_image: segment 5: paddr=000d5e88 vaddr=40081360 size=16948h ( 92488) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (425) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (444) app_init: Application information:[0m
+[0;32mI (444) app_init: Project name:     onoff_client[0m
+[0;32mI (448) app_init: App version:      1[0m
+[0;32mI (451) app_init: Compile time:     Apr 30 2025 04:51:41[0m
+[0;32mI (456) app_init: ELF file SHA256:  aa0d60b58...[0m
+[0;32mI (461) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (464) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (468) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (472) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (476) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFCAE48 len 000151B8 (84 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 40097CA8 len 00008358 (32 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (539) coexist: coex firmware version: e727207[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (553) EXAMPLE: Initializing...[0m
+[0;32mI (553) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (553) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[1;31mE (573) esp_timer: Task is already initialized[0m
+[0;32mI (573) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (593) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (603) BTDM_INIT: Bluetooth MAC: 14:33:5c:38:cf:e2[0m
+[0;32mI (603) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (953) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (1043) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, key "onoff_client", length 6[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, data: 00 00 00 00 00 44[0m
+[0;32mI (1043) EXAMPLE: Restore, net_idx 0x0000, app_idx 0x0000, onoff 0, tid 0x44[0m
+[0;32mI (1063) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1063) EXAMPLE: BLE Mesh Node initialized[0m
+[0;32mI (1063) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[1;31mE (1073) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (14133) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;33mW (22843) BLE_MESH: No Health Server context provided[0m
+[0;33mW (24463) BLE_MESH: No Health Server context provided[0m
+[0;32mI (24483) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (24493) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (24493) EXAMPLE: net_idx: 0x0000, addr: 0x003d[0m
+[0;32mI (24493) EXAMPLE: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (24493) EXAMPLE: Provisioning completado! NetIdx: 0x0000, Addr: 0x003d[0m
+[0;33mW (26303) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (34643) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (34643) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (34643) AppKey: 44 b0 51 ae 8d fe 43 11 f6 2c aa 80 4d 3e c0 cd[0m
+[0;32mI (56413) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (56413) EXAMPLE: elem_addr 0x003d, app_idx 0x0000, cid 0xffff, mod_id 0x1001[0m
+[0;32mI (56423) EXAMPLE: AppKey vinculada: AppIdx 0x0000[0m
+[0;32mI (56423) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (56433) EXAMPLE_NVS: Store, data: 00 00 00 00 00 44[0m
+[0;32mI (60903) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (60903) EXAMPLE_NVS: Store, data: 00 00 00 00 01 45[0m
+[0;32mI (60903) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (61123) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (61123) EXAMPLE_NVS: Store, data: 00 00 00 00 00 46[0m
+[0;32mI (61123) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (62433) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (62433) EXAMPLE_NVS: Store, data: 00 00 00 00 01 47[0m
+[0;32mI (62433) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (62633) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (62633) EXAMPLE_NVS: Store, data: 00 00 00 00 00 48[0m
+[0;32mI (62633) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (64633) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (64633) EXAMPLE_NVS: Store, data: 00 00 00 00 01 49[0m
+[0;32mI (64633) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (64843) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (64843) EXAMPLE_NVS: Store, data: 00 00 00 00 00 4a[0m
+[0;32mI (64843) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (66613) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (66613) EXAMPLE_NVS: Store, data: 00 00 00 00 01 4b[0m
+[0;32mI (66613) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (66653) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (66653) EXAMPLE_NVS: Store, data: 00 00 00 00 00 4c[0m
+[0;32mI (66653) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (66793) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (66793) EXAMPLE_NVS: Store, data: 00 00 00 00 01 4d[0m
+[0;32mI (66793) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (78523) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (78523) EXAMPLE_NVS: Store, data: 00 00 00 00 00 4e[0m
+[0;32mI (78523) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (78573) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (78573) EXAMPLE_NVS: Store, data: 00 00 00 00 01 4f[0m
+[0;32mI (78573) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (78613) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (78613) EXAMPLE_NVS: Store, data: 00 00 00 00 00 50[0m
+[0;32mI (78613) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (78653) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (78653) EXAMPLE_NVS: Store, data: 00 00 00 00 01 51[0m
+[0;32mI (78653) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (78703) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (78703) EXAMPLE_NVS: Store, data: 00 00 00 00 00 52[0m
+[0;32mI (78703) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (80023) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (80023) EXAMPLE_NVS: Store, data: 00 00 00 00 01 53[0m
+[0;32mI (80023) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (80063) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (80063) EXAMPLE_NVS: Store, data: 00 00 00 00 00 54[0m
+[0;32mI (80063) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (80113) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (80113) EXAMPLE_NVS: Store, data: 00 00 00 00 01 55[0m
+[0;32mI (80113) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (80153) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (80153) EXAMPLE_NVS: Store, data: 00 00 00 00 00 56[0m
+[0;32mI (80153) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (80203) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (80203) EXAMPLE_NVS: Store, data: 00 00 00 00 01 57[0m
+[0;32mI (80203) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (82573) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (82573) EXAMPLE_NVS: Store, data: 00 00 00 00 00 58[0m
+[0;32mI (82573) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (82673) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (82673) EXAMPLE_NVS: Store, data: 00 00 00 00 01 59[0m
+[0;32mI (82673) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (82723) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (82723) EXAMPLE_NVS: Store, data: 00 00 00 00 00 5a[0m
+[0;32mI (82723) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (88873) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (88873) EXAMPLE_NVS: Store, data: 00 00 00 00 01 5b[0m
+[0;32mI (88873) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (89013) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (89013) EXAMPLE_NVS: Store, data: 00 00 00 00 00 5c[0m
+[0;32mI (89013) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (93503) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (93503) EXAMPLE_NVS: Store, data: 00 00 00 00 01 5d[0m
+[0;32mI (93503) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (93823) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (93823) EXAMPLE_NVS: Store, data: 00 00 00 00 00 5e[0m
+[0;32mI (93823) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (94523) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (94523) EXAMPLE_NVS: Store, data: 00 00 00 00 01 5f[0m
+[0;32mI (94523) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (94563) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (94563) EXAMPLE_NVS: Store, data: 00 00 00 00 00 60[0m
+[0;32mI (94563) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (94613) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (94613) EXAMPLE_NVS: Store, data: 00 00 00 00 01 61[0m
+[0;32mI (94613) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (94653) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (94653) EXAMPLE_NVS: Store, data: 00 00 00 00 00 62[0m
+[0;32mI (94653) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (94703) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (94703) EXAMPLE_NVS: Store, data: 00 00 00 00 01 63[0m
+[0;32mI (94703) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (94743) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (94743) EXAMPLE_NVS: Store, data: 00 00 00 00 00 64[0m
+[0;32mI (94743) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (94793) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (94793) EXAMPLE_NVS: Store, data: 00 00 00 00 01 65[0m
+[0;32mI (94793) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (94833) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (94833) EXAMPLE_NVS: Store, data: 00 00 00 00 00 66[0m
+[0;32mI (94833) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (94883) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (94883) EXAMPLE_NVS: Store, data: 00 00 00 00 01 67[0m
+[0;32mI (94883) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (94923) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (94923) EXAMPLE_NVS: Store, data: 00 00 00 00 00 68[0m
+[0;32mI (94923) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (94983) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (94983) EXAMPLE_NVS: Store, data: 00 00 00 00 01 69[0m
+[0;32mI (94983) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (95023) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95023) EXAMPLE_NVS: Store, data: 00 00 00 00 00 6a[0m
+[0;32mI (95023) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (95063) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95063) EXAMPLE_NVS: Store, data: 00 00 00 00 01 6b[0m
+[0;32mI (95063) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (95103) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95103) EXAMPLE_NVS: Store, data: 00 00 00 00 00 6c[0m
+[0;32mI (95103) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (95153) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95153) EXAMPLE_NVS: Store, data: 00 00 00 00 01 6d[0m
+[0;32mI (95153) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (95193) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95193) EXAMPLE_NVS: Store, data: 00 00 00 00 00 6e[0m
+[0;32mI (95193) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (95243) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95243) EXAMPLE_NVS: Store, data: 00 00 00 00 01 6f[0m
+[0;32mI (95243) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (95283) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95283) EXAMPLE_NVS: Store, data: 00 00 00 00 00 70[0m
+[0;32mI (95283) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (95333) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95333) EXAMPLE_NVS: Store, data: 00 00 00 00 01 71[0m
+[0;32mI (95333) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (95373) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95373) EXAMPLE_NVS: Store, data: 00 00 00 00 00 72[0m
+[0;32mI (95373) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (95423) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95423) EXAMPLE_NVS: Store, data: 00 00 00 00 01 73[0m
+[0;32mI (95423) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (95463) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95463) EXAMPLE_NVS: Store, data: 00 00 00 00 00 74[0m
+[0;32mI (95463) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (95513) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95513) EXAMPLE_NVS: Store, data: 00 00 00 00 01 75[0m
+[0;32mI (95513) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (95553) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95553) EXAMPLE_NVS: Store, data: 00 00 00 00 00 76[0m
+[0;32mI (95553) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (95603) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95603) EXAMPLE_NVS: Store, data: 00 00 00 00 01 77[0m
+[0;32mI (95603) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (95643) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95643) EXAMPLE_NVS: Store, data: 00 00 00 00 00 78[0m
+[0;32mI (95643) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (95693) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95693) EXAMPLE_NVS: Store, data: 00 00 00 00 01 79[0m
+[0;32mI (95693) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (95733) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95733) EXAMPLE_NVS: Store, data: 00 00 00 00 00 7a[0m
+[0;32mI (95733) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (95783) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95783) EXAMPLE_NVS: Store, data: 00 00 00 00 01 7b[0m
+[0;32mI (95783) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (95823) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95823) EXAMPLE_NVS: Store, data: 00 00 00 00 00 7c[0m
+[0;32mI (95823) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (95873) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95873) EXAMPLE_NVS: Store, data: 00 00 00 00 01 7d[0m
+[0;32mI (95873) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (95913) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95913) EXAMPLE_NVS: Store, data: 00 00 00 00 00 7e[0m
+[0;32mI (95913) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (95963) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (95963) EXAMPLE_NVS: Store, data: 00 00 00 00 01 7f[0m
+[0;32mI (95963) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (96003) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96003) EXAMPLE_NVS: Store, data: 00 00 00 00 00 80[0m
+[0;32mI (96003) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (96053) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96053) EXAMPLE_NVS: Store, data: 00 00 00 00 01 81[0m
+[0;32mI (96053) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (96093) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96093) EXAMPLE_NVS: Store, data: 00 00 00 00 00 82[0m
+[0;32mI (96093) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (96143) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96143) EXAMPLE_NVS: Store, data: 00 00 00 00 01 83[0m
+[0;32mI (96143) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (96183) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96183) EXAMPLE_NVS: Store, data: 00 00 00 00 00 84[0m
+[0;32mI (96183) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (96233) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96233) EXAMPLE_NVS: Store, data: 00 00 00 00 01 85[0m
+[0;32mI (96233) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (96273) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96273) EXAMPLE_NVS: Store, data: 00 00 00 00 00 86[0m
+[0;32mI (96273) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (96323) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96323) EXAMPLE_NVS: Store, data: 00 00 00 00 01 87[0m
+[0;32mI (96323) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (96363) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96363) EXAMPLE_NVS: Store, data: 00 00 00 00 00 88[0m
+[0;32mI (96363) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (96413) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96413) EXAMPLE_NVS: Store, data: 00 00 00 00 01 89[0m
+[0;32mI (96413) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (96453) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96453) EXAMPLE_NVS: Store, data: 00 00 00 00 00 8a[0m
+[0;32mI (96453) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (96503) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96503) EXAMPLE_NVS: Store, data: 00 00 00 00 01 8b[0m
+[0;32mI (96503) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (96543) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96543) EXAMPLE_NVS: Store, data: 00 00 00 00 00 8c[0m
+[0;32mI (96543) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (96593) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96593) EXAMPLE_NVS: Store, data: 00 00 00 00 01 8d[0m
+[0;32mI (96593) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (96633) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96633) EXAMPLE_NVS: Store, data: 00 00 00 00 00 8e[0m
+[0;32mI (96633) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (96683) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96683) EXAMPLE_NVS: Store, data: 00 00 00 00 01 8f[0m
+[0;32mI (96683) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (96723) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96723) EXAMPLE_NVS: Store, data: 00 00 00 00 00 90[0m
+[0;32mI (96723) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (96773) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96773) EXAMPLE_NVS: Store, data: 00 00 00 00 01 91[0m
+[0;32mI (96773) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (96813) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96813) EXAMPLE_NVS: Store, data: 00 00 00 00 00 92[0m
+[0;32mI (96813) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (96873) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96873) EXAMPLE_NVS: Store, data: 00 00 00 00 01 93[0m
+[0;32mI (96873) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (96913) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96913) EXAMPLE_NVS: Store, data: 00 00 00 00 00 94[0m
+[0;32mI (96913) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (96953) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (96953) EXAMPLE_NVS: Store, data: 00 00 00 00 01 95[0m
+[0;32mI (96953) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (97003) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97003) EXAMPLE_NVS: Store, data: 00 00 00 00 00 96[0m
+[0;32mI (97003) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (97043) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97043) EXAMPLE_NVS: Store, data: 00 00 00 00 01 97[0m
+[0;32mI (97043) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (97103) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97103) EXAMPLE_NVS: Store, data: 00 00 00 00 00 98[0m
+[0;32mI (97103) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (97143) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97143) EXAMPLE_NVS: Store, data: 00 00 00 00 01 99[0m
+[0;32mI (97143) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (97183) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97183) EXAMPLE_NVS: Store, data: 00 00 00 00 00 9a[0m
+[0;32mI (97183) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (97223) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97223) EXAMPLE_NVS: Store, data: 00 00 00 00 01 9b[0m
+[0;32mI (97223) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (97263) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97263) EXAMPLE_NVS: Store, data: 00 00 00 00 00 9c[0m
+[0;32mI (97263) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (97313) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97313) EXAMPLE_NVS: Store, data: 00 00 00 00 01 9d[0m
+[0;32mI (97313) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (97353) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97353) EXAMPLE_NVS: Store, data: 00 00 00 00 00 9e[0m
+[0;32mI (97353) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (97403) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97403) EXAMPLE_NVS: Store, data: 00 00 00 00 01 9f[0m
+[0;32mI (97403) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (97443) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97443) EXAMPLE_NVS: Store, data: 00 00 00 00 00 a0[0m
+[0;32mI (97443) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (97493) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97493) EXAMPLE_NVS: Store, data: 00 00 00 00 01 a1[0m
+[0;32mI (97493) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (97543) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97543) EXAMPLE_NVS: Store, data: 00 00 00 00 00 a2[0m
+[0;32mI (97543) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (97583) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97583) EXAMPLE_NVS: Store, data: 00 00 00 00 01 a3[0m
+[0;32mI (97583) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (97623) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97623) EXAMPLE_NVS: Store, data: 00 00 00 00 00 a4[0m
+[0;32mI (97623) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (97673) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97673) EXAMPLE_NVS: Store, data: 00 00 00 00 01 a5[0m
+[0;32mI (97673) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (97723) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97723) EXAMPLE_NVS: Store, data: 00 00 00 00 00 a6[0m
+[0;32mI (97723) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (97763) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97763) EXAMPLE_NVS: Store, data: 00 00 00 00 01 a7[0m
+[0;32mI (97763) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (97803) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97803) EXAMPLE_NVS: Store, data: 00 00 00 00 00 a8[0m
+[0;32mI (97803) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (97853) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97853) EXAMPLE_NVS: Store, data: 00 00 00 00 01 a9[0m
+[0;32mI (97853) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (97903) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97903) EXAMPLE_NVS: Store, data: 00 00 00 00 00 aa[0m
+[0;32mI (97903) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (97943) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97943) EXAMPLE_NVS: Store, data: 00 00 00 00 01 ab[0m
+[0;32mI (97943) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (97983) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (97983) EXAMPLE_NVS: Store, data: 00 00 00 00 00 ac[0m
+[0;32mI (97983) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (98033) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98033) EXAMPLE_NVS: Store, data: 00 00 00 00 01 ad[0m
+[0;32mI (98033) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (98073) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98073) EXAMPLE_NVS: Store, data: 00 00 00 00 00 ae[0m
+[0;32mI (98073) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (98123) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98123) EXAMPLE_NVS: Store, data: 00 00 00 00 01 af[0m
+[0;32mI (98123) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (98163) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98163) EXAMPLE_NVS: Store, data: 00 00 00 00 00 b0[0m
+[0;32mI (98163) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (98213) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98213) EXAMPLE_NVS: Store, data: 00 00 00 00 01 b1[0m
+[0;32mI (98213) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (98263) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98263) EXAMPLE_NVS: Store, data: 00 00 00 00 00 b2[0m
+[0;32mI (98263) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (98303) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98303) EXAMPLE_NVS: Store, data: 00 00 00 00 01 b3[0m
+[0;32mI (98303) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (98343) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98343) EXAMPLE_NVS: Store, data: 00 00 00 00 00 b4[0m
+[0;32mI (98343) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (98393) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98393) EXAMPLE_NVS: Store, data: 00 00 00 00 01 b5[0m
+[0;32mI (98393) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (98433) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98433) EXAMPLE_NVS: Store, data: 00 00 00 00 00 b6[0m
+[0;32mI (98433) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (98483) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98483) EXAMPLE_NVS: Store, data: 00 00 00 00 01 b7[0m
+[0;32mI (98483) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (98523) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98523) EXAMPLE_NVS: Store, data: 00 00 00 00 00 b8[0m
+[0;32mI (98523) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (98573) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98573) EXAMPLE_NVS: Store, data: 00 00 00 00 01 b9[0m
+[0;32mI (98573) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (98613) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98613) EXAMPLE_NVS: Store, data: 00 00 00 00 00 ba[0m
+[0;32mI (98613) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (98663) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98663) EXAMPLE_NVS: Store, data: 00 00 00 00 01 bb[0m
+[0;32mI (98663) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (98703) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98703) EXAMPLE_NVS: Store, data: 00 00 00 00 00 bc[0m
+[0;32mI (98703) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (98763) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98763) EXAMPLE_NVS: Store, data: 00 00 00 00 01 bd[0m
+[0;32mI (98763) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (98803) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98803) EXAMPLE_NVS: Store, data: 00 00 00 00 00 be[0m
+[0;32mI (98803) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (98843) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98843) EXAMPLE_NVS: Store, data: 00 00 00 00 01 bf[0m
+[0;32mI (98843) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (98883) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98883) EXAMPLE_NVS: Store, data: 00 00 00 00 00 c0[0m
+[0;32mI (98883) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (98933) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98933) EXAMPLE_NVS: Store, data: 00 00 00 00 01 c1[0m
+[0;32mI (98933) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (98973) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98973) EXAMPLE_NVS: Store, data: 00 00 00 00 00 c2[0m
+[0;32mI (98973) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (99063) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (99063) EXAMPLE_NVS: Store, data: 00 00 00 00 01 c3[0m
+[0;32mI (99063) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (99113) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (99113) EXAMPLE_NVS: Store, data: 00 00 00 00 00 c4[0m
+[0;32mI (99113) EXAMPLE: Comando enviado! Estado: OFF[0m

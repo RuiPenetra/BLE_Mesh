@@ -1,0 +1,72 @@
+[1/5] C:\Windows\system32\cmd.exe /C "cd /D C:\Espressif\esp\meu_mesh\onoff_client\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.4.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Espressif/esp/meu_mesh/onoff_client/build/partition_table/partition-table.bin C:/Espressif/esp/meu_mesh/onoff_client/build/onoff_client.bin"
+onoff_client.bin binary size 0xdc6f0 bytes. Smallest app partition is 0x177000 bytes. 0x9a910 bytes (41%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D C:\Espressif\esp\meu_mesh\onoff_client\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.4.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Espressif/esp/meu_mesh/onoff_client/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\Windows\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.4.1\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.4.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.4.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Espressif/esp/meu_mesh/onoff_client/build -P C:/Espressif/frameworks/esp-idf-v5.4.1/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 onoff_client.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM4
+Connecting......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 14:33:5c:38:cf:e0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000ecfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 25984 bytes to 16378...
+Writing at 0x00001000... (100 %)
+Wrote 25984 bytes (16378 compressed) at 0x00001000 in 0.5 seconds (effective 400.9 kbit/s)...
+Hash of data verified.
+Compressed 902896 bytes to 518521...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001d770... (6 %)
+Writing at 0x0002d21e... (9 %)
+Writing at 0x000381af... (12 %)
+Writing at 0x00042d21... (15 %)
+Writing at 0x000483a3... (18 %)
+Writing at 0x0004e4d8... (21 %)
+Writing at 0x00053e69... (25 %)
+Writing at 0x00059952... (28 %)
+Writing at 0x0005f488... (31 %)
+Writing at 0x00065f16... (34 %)
+Writing at 0x0006bee3... (37 %)
+Writing at 0x000722fa... (40 %)
+Writing at 0x000784a7... (43 %)
+Writing at 0x0007e797... (46 %)
+Writing at 0x00084866... (50 %)
+Writing at 0x0008a96b... (53 %)
+Writing at 0x000907ee... (56 %)
+Writing at 0x00096438... (59 %)
+Writing at 0x0009c817... (62 %)
+Writing at 0x000a2d15... (65 %)
+Writing at 0x000a8a55... (68 %)
+Writing at 0x000ae3f7... (71 %)
+Writing at 0x000b40c5... (75 %)
+Writing at 0x000ba2ee... (78 %)
+Writing at 0x000c0105... (81 %)
+Writing at 0x000c98b7... (84 %)
+Writing at 0x000d0aeb... (87 %)
+Writing at 0x000d708c... (90 %)
+Writing at 0x000dcc5d... (93 %)
+Writing at 0x000e2477... (96 %)
+Writing at 0x000e8614... (100 %)
+Wrote 902896 bytes (518521 compressed) at 0x00010000 in 11.7 seconds (effective 617.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 1571.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,0 +1,359 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 30 2025 04:51:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2976ch (169836) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=00039794 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=000397b8 vaddr=3ffbdb60 size=054f8h ( 21752) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003ecb8 vaddr=40080000 size=01360h (  4960) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=95e60h (613984) map[0m
+[0;32mI (377) esp_image: segment 5: paddr=000d5e88 vaddr=40081360 size=16948h ( 92488) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (425) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (444) app_init: Application information:[0m
+[0;32mI (444) app_init: Project name:     onoff_client[0m
+[0;32mI (448) app_init: App version:      1[0m
+[0;32mI (451) app_init: Compile time:     Apr 30 2025 04:51:41[0m
+[0;32mI (456) app_init: ELF file SHA256:  cd66f3fdf...[0m
+[0;32mI (461) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (465) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (468) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (472) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (476) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFCAE48 len 000151B8 (84 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 40097CA8 len 00008358 (32 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (539) coexist: coex firmware version: e727207[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (553) EXAMPLE: Initializing...[0m
+[0;32mI (553) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (553) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[1;31mE (573) esp_timer: Task is already initialized[0m
+[0;32mI (573) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (593) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (593) BTDM_INIT: Bluetooth MAC: 14:33:5c:38:cf:e2[0m
+[0;32mI (603) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (963) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (1043) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1053) EXAMPLE_NVS: Restore, key "onoff_client", length 6[0m
+[0;32mI (1053) EXAMPLE_NVS: Restore, data: 00 00 00 00 01 4d[0m
+[0;32mI (1053) EXAMPLE: Restore, net_idx 0x0000, app_idx 0x0000, onoff 1, tid 0x4d[0m
+[0;32mI (1073) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1073) EXAMPLE: BLE Mesh Node initialized[0m
+[0;32mI (1073) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[1;31mE (1083) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[1;31mE (43393) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (43393) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (43393) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (43393) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (43413) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (43413) EXAMPLE_NVS: Store, data: 00 00 00 00 00 4e[0m
+[0;32mI (43413) EXAMPLE: Comando enviado! Estado: OFF[0m
+[1;31mE (43443) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (43443) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (43443) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (43443) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (43463) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (43463) EXAMPLE_NVS: Store, data: 00 00 00 00 01 4f[0m
+[0;32mI (43463) EXAMPLE: Comando enviado! Estado: ON[0m
+[1;31mE (43493) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (43493) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (43493) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (43493) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (43513) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (43513) EXAMPLE_NVS: Store, data: 00 00 00 00 00 50[0m
+[0;32mI (43513) EXAMPLE: Comando enviado! Estado: OFF[0m
+[1;31mE (43543) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (43543) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (43543) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (43543) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (43563) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (43563) EXAMPLE_NVS: Store, data: 00 00 00 00 01 51[0m
+[0;32mI (43563) EXAMPLE: Comando enviado! Estado: ON[0m
+[1;31mE (43593) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (43593) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (43593) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (43593) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (43613) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (43613) EXAMPLE_NVS: Store, data: 00 00 00 00 00 52[0m
+[0;32mI (43613) EXAMPLE: Comando enviado! Estado: OFF[0m
+[1;31mE (43643) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (43643) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (43643) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (43643) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (43663) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (43663) EXAMPLE_NVS: Store, data: 00 00 00 00 01 53[0m
+[0;32mI (43663) EXAMPLE: Comando enviado! Estado: ON[0m
+[1;31mE (44993) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (44993) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (44993) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (44993) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (45013) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (45013) EXAMPLE_NVS: Store, data: 00 00 00 00 00 54[0m
+[0;32mI (45013) EXAMPLE: Comando enviado! Estado: OFF[0m
+[1;31mE (45173) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (45173) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (45173) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (45173) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (45193) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (45193) EXAMPLE_NVS: Store, data: 00 00 00 00 01 55[0m
+[0;32mI (45193) EXAMPLE: Comando enviado! Estado: ON[0m
+[1;31mE (45223) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (45223) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (45223) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (45223) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (45243) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (45243) EXAMPLE_NVS: Store, data: 00 00 00 00 00 56[0m
+[0;32mI (45243) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (963) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (1043) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, key "onoff_client", length 6[0m
+[0;32mI (1043) EXAMPLE_NVS: Restore, data: 00 00 00 00 00 56[0m
+[0;32mI (1053) EXAMPLE: Restore, net_idx 0x0000, app_idx 0x0000, onoff 0, tid 0x56[0m
+[0;32mI (1073) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1073) EXAMPLE: BLE Mesh Node initialized[0m
+[0;32mI (1073) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[1;31mE (1073) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (7723) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;33mW (15193) BLE_MESH: No Health Server context provided[0m
+[0;33mW (18663) BLE_MESH: No Health Server context provided[0m
+[0;32mI (18683) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (18683) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (18683) EXAMPLE: net_idx: 0x0000, addr: 0x0030[0m
+[0;32mI (18693) EXAMPLE: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (18693) EXAMPLE: Provisioning completado! NetIdx: 0x0000, Addr: 0x0030[0m
+[0;33mW (19783) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (28803) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (28803) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (28803) AppKey: 44 b0 51 ae 8d fe 43 11 f6 2c aa 80 4d 3e c0 cd[0m
+[1;31mE (47803) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[1;31mE (47803) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (47803) EXAMPLE: Generic client, event 1, error code -22, opcode is 0x8203[0m
+[0;32mI (47803) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (47823) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (47823) EXAMPLE_NVS: Store, data: 00 00 00 00 01 57[0m
+[0;32mI (47823) EXAMPLE: Comando enviado! Estado: ON[0m
+[1;31mE (47993) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[1;31mE (47993) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (47993) EXAMPLE: Generic client, event 1, error code -22, opcode is 0x8203[0m
+[0;32mI (47993) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (48013) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (48013) EXAMPLE_NVS: Store, data: 00 00 00 00 00 58[0m
+[0;32mI (48013) EXAMPLE: Comando enviado! Estado: OFF[0m
+[1;31mE (61883) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[1;31mE (61883) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (61883) EXAMPLE: Generic client, event 1, error code -22, opcode is 0x8203[0m
+[0;32mI (61883) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (61903) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (61903) EXAMPLE_NVS: Store, data: 00 00 00 00 01 59[0m
+[0;32mI (61903) EXAMPLE: Comando enviado! Estado: ON[0m
+[1;31mE (62083) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[1;31mE (62083) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (62083) EXAMPLE: Generic client, event 1, error code -22, opcode is 0x8203[0m
+[0;32mI (62083) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (62103) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (62103) EXAMPLE_NVS: Store, data: 00 00 00 00 00 5a[0m
+[0;32mI (62103) EXAMPLE: Comando enviado! Estado: OFF[0m
+[1;31mE (65633) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[1;31mE (65633) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (65633) EXAMPLE: Generic client, event 1, error code -22, opcode is 0x8203[0m
+[0;32mI (65633) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (65653) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (65653) EXAMPLE_NVS: Store, data: 00 00 00 00 01 5b[0m
+[0;32mI (65653) EXAMPLE: Comando enviado! Estado: ON[0m
+[1;31mE (65833) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[1;31mE (65833) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (65833) EXAMPLE: Generic client, event 1, error code -22, opcode is 0x8203[0m
+[0;32mI (65833) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (65853) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (65853) EXAMPLE_NVS: Store, data: 00 00 00 00 00 5c[0m
+[0;32mI (65853) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (81443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (81443) EXAMPLE: elem_addr 0x0030, app_idx 0x0000, cid 0xffff, mod_id 0x1001[0m
+[0;32mI (81443) EXAMPLE: AppKey vinculada: AppIdx 0x0000[0m
+[0;32mI (81453) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (81453) EXAMPLE_NVS: Store, data: 00 00 00 00 00 5c[0m
+[0;32mI (86983) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (86983) EXAMPLE_NVS: Store, data: 00 00 00 00 01 5d[0m
+[0;32mI (86983) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (87023) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (87023) EXAMPLE_NVS: Store, data: 00 00 00 00 00 5e[0m
+[0;32mI (87023) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (87073) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (87073) EXAMPLE_NVS: Store, data: 00 00 00 00 01 5f[0m
+[0;32mI (87073) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (87113) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (87113) EXAMPLE_NVS: Store, data: 00 00 00 00 00 60[0m
+[0;32mI (87113) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (87163) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (87163) EXAMPLE_NVS: Store, data: 00 00 00 00 01 61[0m
+[0;32mI (87163) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (92453) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (92453) EXAMPLE_NVS: Store, data: 00 00 00 00 00 62[0m
+[0;32mI (92453) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (92623) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (92623) EXAMPLE_NVS: Store, data: 00 00 00 00 01 63[0m
+[0;32mI (92623) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (104903) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (104903) EXAMPLE_NVS: Store, data: 00 00 00 00 00 64[0m
+[0;32mI (104903) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (105123) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (105123) EXAMPLE_NVS: Store, data: 00 00 00 00 01 65[0m
+[0;32mI (105123) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (171813) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (171813) EXAMPLE_NVS: Store, data: 00 00 00 00 00 66[0m
+[0;32mI (171813) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (683) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (993) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (1073) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1073) EXAMPLE_NVS: Restore, key "onoff_client", length 6[0m
+[0;32mI (1073) EXAMPLE_NVS: Restore, data: 00 00 00 00 00 66[0m
+[0;32mI (1083) EXAMPLE: Restore, net_idx 0x0000, app_idx 0x0000, onoff 0, tid 0x66[0m
+[0;32mI (1103) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1103) EXAMPLE: BLE Mesh Node initialized[0m
+[0;32mI (1103) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[1;31mE (1113) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[1;31mE (7423) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (7423) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (7423) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (7423) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (7443) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (7443) EXAMPLE_NVS: Store, data: 00 00 00 00 01 67[0m
+[0;32mI (7443) EXAMPLE: Comando enviado! Estado: ON[0m
+[1;31mE (7613) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (7613) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (7613) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (7613) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (7633) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (7633) EXAMPLE_NVS: Store, data: 00 00 00 00 00 68[0m
+[0;32mI (7633) EXAMPLE: Comando enviado! Estado: OFF[0m
+[1;31mE (19113) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (19113) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (19113) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (19113) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (19133) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (19133) EXAMPLE_NVS: Store, data: 00 00 00 00 01 69[0m
+[0;32mI (19133) EXAMPLE: Comando enviado! Estado: ON[0m
+[1;31mE (19163) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (19163) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (19163) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (19163) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (19183) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (19183) EXAMPLE_NVS: Store, data: 00 00 00 00 00 6a[0m
+[0;32mI (19183) EXAMPLE: Comando enviado! Estado: OFF[0m
+[1;31mE (19213) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (19213) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (19213) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (19213) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (19233) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (19233) EXAMPLE_NVS: Store, data: 00 00 00 00 01 6b[0m
+[0;32mI (19233) EXAMPLE: Comando enviado! Estado: ON[0m
+[1;31mE (19263) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (19263) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (19263) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (19263) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (19283) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (19283) EXAMPLE_NVS: Store, data: 00 00 00 00 00 6c[0m
+[0;32mI (19283) EXAMPLE: Comando enviado! Estado: OFF[0m
+[1;31mE (19313) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[1;31mE (19313) BLE_MESH: Failed to send client message 0x00008203[0m
+[0;32mI (19313) EXAMPLE: Generic client, event 1, error code -125, opcode is 0x8203[0m
+[0;32mI (19313) EXAMPLE: ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT[0m
+[0;32mI (19333) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (19333) EXAMPLE_NVS: Store, data: 00 00 00 00 01 6d[0m
+[0;32mI (19333) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (82233) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;33mW (93073) BLE_MESH: No Health Server context provided[0m
+[0;33mW (98843) BLE_MESH: No Health Server context provided[0m
+[0;32mI (98863) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (98863) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (98863) EXAMPLE: net_idx: 0x0000, addr: 0x0031[0m
+[0;32mI (98863) EXAMPLE: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (98873) EXAMPLE: Provisioning completado! NetIdx: 0x0000, Addr: 0x0031[0m
+[0;33mW (99963) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (108933) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (108933) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (108933) AppKey: 44 b0 51 ae 8d fe 43 11 f6 2c aa 80 4d 3e c0 cd[0m
+[0;33mW (124443) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (152243) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (152243) EXAMPLE: elem_addr 0x0031, app_idx 0x0000, cid 0xffff, mod_id 0x1001[0m
+[0;32mI (152243) EXAMPLE: AppKey vinculada: AppIdx 0x0000[0m
+[0;32mI (152253) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (152253) EXAMPLE_NVS: Store, data: 00 00 00 00 01 6d[0m
+[0;32mI (217413) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (217413) EXAMPLE_NVS: Store, data: 00 00 00 00 00 6e[0m
+[0;32mI (217413) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (217543) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (217543) EXAMPLE_NVS: Store, data: 00 00 00 00 01 6f[0m
+[0;32mI (217543) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (217583) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (217583) EXAMPLE_NVS: Store, data: 00 00 00 00 00 70[0m
+[0;32mI (217583) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (292563) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (292563) EXAMPLE_NVS: Store, data: 00 00 00 00 01 71[0m
+[0;32mI (292563) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (292603) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (292603) EXAMPLE_NVS: Store, data: 00 00 00 00 00 72[0m
+[0;32mI (292603) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (292653) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (292653) EXAMPLE_NVS: Store, data: 00 00 00 00 01 73[0m
+[0;32mI (292653) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (292693) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (292693) EXAMPLE_NVS: Store, data: 00 00 00 00 00 74[0m
+[0;32mI (292693) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (292743) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (292743) EXAMPLE_NVS: Store, data: 00 00 00 00 01 75[0m
+[0;32mI (292743) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (292783) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (292783) EXAMPLE_NVS: Store, data: 00 00 00 00 00 76[0m
+[0;32mI (292783) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (292833) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (292833) EXAMPLE_NVS: Store, data: 00 00 00 00 01 77[0m
+[0;32mI (292833) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (293933) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (293933) EXAMPLE_NVS: Store, data: 00 00 00 00 00 78[0m
+[0;32mI (293933) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (293973) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (293973) EXAMPLE_NVS: Store, data: 00 00 00 00 01 79[0m
+[0;32mI (293973) EXAMPLE: Comando enviado! Estado: ON[0m
+[0;32mI (294023) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (294023) EXAMPLE_NVS: Store, data: 00 00 00 00 00 7a[0m
+[0;32mI (294023) EXAMPLE: Comando enviado! Estado: OFF[0m
+[0;32mI (294063) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (294063) EXAMPLE_NVS: Store, data: 00 00 00 00 01 7b[0m
+[0;32mI (294063) EXAMPLE: Comando enviado! Estado: ON[0m
